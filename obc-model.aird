@@ -34,7 +34,7 @@
         <eAnnotations xmi:type="description:DAnnotation" uid="_MRsXp0_-Ee23oJvNnhOvGg" source="TitleBlockLine" references="_MRsXqE_-Ee23oJvNnhOvGg _MRsXq0_-Ee23oJvNnhOvGg"/>
         <eAnnotations xmi:type="description:DAnnotation" uid="_MRsXqE_-Ee23oJvNnhOvGg" source="TitleBlockCell">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MRsXqU_-Ee23oJvNnhOvGg" key="Name:" value="Summary"/>
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MRsXqk_-Ee23oJvNnhOvGg" key="Content:" value="Breakdown of segments in the mission and subsystems in the segments."/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MRsXqk_-Ee23oJvNnhOvGg" key="Content:" value="aql:self.target.summary"/>
         </eAnnotations>
         <eAnnotations xmi:type="description:DAnnotation" uid="_MRsXq0_-Ee23oJvNnhOvGg" source="TitleBlockCell" references="_MR390E_-Ee23oJvNnhOvGg">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MRsXrE_-Ee23oJvNnhOvGg" key="Name:" value="Description"/>

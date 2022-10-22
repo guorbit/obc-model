@@ -37,7 +37,7 @@
   <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue" id="943981fc-d439-4813-9706-a17078681de2"
       key="projectApproach" value="SingletonComponents"/>
   <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
-      id="045d6d56-0000-4b75-9553-adc4ae8da197" name="obc-model">
+      id="045d6d56-0000-4b75-9553-adc4ae8da197" name="obc-model" summary="Subsystem-level model of the On-Board Computer for the CloudView stratospheric balloon and ASTRAEUS-01 CubeSat systems.">
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
         id="c82e338b-11e3-4d68-bc5f-953baca74797" name="Operational Analysis">
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"

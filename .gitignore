@@ -1,0 +1,10 @@
+# Session logs
+MDEReport.html
+
+# Plugin configs and logs
+.metadata/
+.settings/
+
+# Generated documentation
+docs/
+
