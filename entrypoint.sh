@@ -15,7 +15,7 @@ capella -nosplash -consoleLog \
 -appid org.polarsys.capella.core.validation.commandline \
 -data /capella-workspace \
 -import "/workdir" \
--input "/workdir/obc-model.aird" \
+-input "obc-model.aird" \
 -outputfolder "/workdir/validation" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
@@ -28,7 +28,7 @@ capella -nosplash -consoleLog \
 -application org.polarsys.capella.core.commandline.core \
 -appid org.polarsys.kitalpha.doc.gen.business.capella.commandline \
 -data /capella-workspace \
--filepath "/workdir/obc-model.aird" \
+-filepath "obc-model.aird" \
 -outputfolder "/workdir/html" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
