@@ -22,4 +22,4 @@ jobs:
         run: docker pull mtreber/capella-html-exporter:5.1.0-0
       -
         name: Map model directory and run Docker container
-        run: docker run --init -v `pwd`:/workdir capella-html-exporter:5.1.0-0
+        run: docker run --init -v `pwd`:/workdir mtreber/capella-html-exporter:5.1.0-0
