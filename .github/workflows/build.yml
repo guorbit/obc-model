@@ -18,6 +18,9 @@ jobs:
         name: Make entrypoint.sh executable
         run: chmod +x entrypoint.sh
       - 
-        name: Build HTML
-        uses: docker://mtreber/capella-html-exporter:5.1.0-0
+        name: Pull Docker container
+        run: docker pull mtreber/capella-html-exporter:5.1.0-0
+      -
+        name: Map model directory and run Docker container
+        run: docker run --init -v `pwd`:/workdir capella-html-exporter
         
