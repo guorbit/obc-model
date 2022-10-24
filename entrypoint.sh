@@ -15,6 +15,7 @@ capella -nosplash -consoleLog \
 -data /capella-workspace \
 -import "/workdir" \
 -input "/workdir/obc-model.aird" \
+-mkdir "/workdir/docs/validation" \
 -outputfolder "/workdir/docs/validation" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
