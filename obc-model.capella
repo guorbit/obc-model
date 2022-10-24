@@ -215,8 +215,58 @@
       </ownedDataPkg>
       <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
           id="93d8a671-5444-4d39-9de6-811881842470" name="Structure">
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="917f9246-60a9-459f-9246-923f5733229f" targetElement="#483ab539-13c4-4901-8105-9ae1ffe40e6a"
+            sourceElement="#8d3b4bb1-65ac-4dbb-b0a5-94e167039cf7"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="657b9fff-0bfc-4fb4-a62f-1c4059f14376" targetElement="#16348eaa-939c-49b9-8946-051c833ea3fd"
+            sourceElement="#5414cea1-8fa9-4a6b-be47-e20b35b33bd4"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="d54032ad-e2c2-493e-96be-10578f497d96" targetElement="#9523ee1d-ec3a-4e30-9e8b-8e71c6e508e4"
+            sourceElement="#6686f801-97d1-4428-b885-b563a1dd51df"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="ff935682-7e0e-4612-a688-b19702cc3de6" targetElement="#e2e2fc0c-33f0-4c0f-b3fd-6c9069727774"
+            sourceElement="#6ddfd1d6-4ac4-4080-a6d6-38e884a1ebf6"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="123bcec9-0c3b-442b-9185-eb591d8f102d" targetElement="#e6d837ca-519b-40e1-82ea-b1311893f1db"
+            sourceElement="#2389774f-c8d2-45c8-afe6-541c72344786"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="697358be-9dac-4cbb-83c8-552408e15d68" targetElement="#0a74a281-bb16-449b-9a5c-988ebd7a00d8"
+            sourceElement="#811c9c0c-0915-4e89-841a-2bc46afa576a"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="59a4d108-d485-44b4-a094-d25c0cd6999a" targetElement="#ccfb2ae6-94e5-45e2-9a89-46dace78beef"
+            sourceElement="#02fd323c-d6d2-4ad7-abe8-6ac5580146af"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="cbf95568-eb50-4c22-8e65-94288a6b08c5" targetElement="#6a7ae7f3-e080-4b7b-823c-3420344036e1"
+            sourceElement="#69868cae-2754-4437-9069-0d4a7fcf20a0"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="09487d55-b56c-4f4f-8448-2fe724809657" targetElement="#5553e1fe-a4a5-4540-83e6-bba04e27765b"
+            sourceElement="#cc6735d3-87ea-458b-9114-98b1964d39c0"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="b5488a53-ffba-4ee6-9b85-bcaee66d2f8a" targetElement="#1896c0f7-b7c9-4d45-be40-72530aecddeb"
+            sourceElement="#d2ab0759-e032-4e1f-9e57-9b4f87fbcb85"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="28835ddd-4d30-4ee9-afa6-e088bc4bd714"
             name="System" abstractType="#65f23381-e98c-46b9-b926-790085c061b0"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="6686f801-97d1-4428-b885-b563a1dd51df"
+            name="Ground Station" abstractType="#a1b113f2-d583-4fbc-9ea5-46b3699eb487"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2389774f-c8d2-45c8-afe6-541c72344786"
+            name="Communications Subsystem" abstractType="#8630d651-1314-4e99-97e2-2e3ec503c310"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="811c9c0c-0915-4e89-841a-2bc46afa576a"
+            name="Payload Subsystem" abstractType="#8bd9ba13-27c0-45c0-b98a-3da45fd41826"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="02fd323c-d6d2-4ad7-abe8-6ac5580146af"
+            name="Software Subsystem" abstractType="#910e7fb9-9f88-4baa-8b8b-74c2d567d3e2"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="69868cae-2754-4437-9069-0d4a7fcf20a0"
+            name="Control Subsystem" abstractType="#4dfe657e-d0a6-469c-bca4-0e9ce1818626"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="cc6735d3-87ea-458b-9114-98b1964d39c0"
+            name="Mechanical Subsystem" abstractType="#9692adca-58de-4bf7-bed9-f8978e710187"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="d2ab0759-e032-4e1f-9e57-9b4f87fbcb85"
+            name="Electrical Subsystem" abstractType="#07e5cec6-29aa-4384-874f-47fb7eaad24f"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="6ddfd1d6-4ac4-4080-a6d6-38e884a1ebf6"
+            name="Ground Station Operator" abstractType="#681a356c-61ec-4279-b999-576795e28368"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="8d3b4bb1-65ac-4dbb-b0a5-94e167039cf7"
+            name="Ground Segment" abstractType="#9d4147e4-cd1e-4521-a2d0-dbb17a18049e"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="5414cea1-8fa9-4a6b-be47-e20b35b33bd4"
+            name="Space Segment" abstractType="#dc65226d-710d-4655-9cfa-cdb2c44bdc94"/>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
             id="65f23381-e98c-46b9-b926-790085c061b0" name="System">
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
@@ -224,6 +274,70 @@
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                 id="69b5d9dc-eedb-4b24-81fc-3974d17155ca" name="Default Region"/>
           </ownedStateMachines>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="a1b113f2-d583-4fbc-9ea5-46b3699eb487" name="Ground Station" actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="66a6e6fa-dae8-4180-b1f4-7829053125ce" targetElement="#534486f9-01c5-4d20-932d-19ddedb36237"
+              sourceElement="#a1b113f2-d583-4fbc-9ea5-46b3699eb487"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="8630d651-1314-4e99-97e2-2e3ec503c310" name="Communications Subsystem"
+            actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="0bfb498d-5fae-40b5-a004-631dc3f1cbc3" targetElement="#f95201fb-1c18-4e2d-b298-c81336d06b88"
+              sourceElement="#8630d651-1314-4e99-97e2-2e3ec503c310"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="8bd9ba13-27c0-45c0-b98a-3da45fd41826" name="Payload Subsystem" actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="6b2b3950-007f-472e-9125-633326ef8796" targetElement="#446cbe39-ebb4-4293-bd27-c24c4351200b"
+              sourceElement="#8bd9ba13-27c0-45c0-b98a-3da45fd41826"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="910e7fb9-9f88-4baa-8b8b-74c2d567d3e2" name="Software Subsystem" actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="8c10620e-45b5-4e82-8cbe-f083bafb643c" targetElement="#fb2f5727-728c-4da6-a3cd-7c38511a5071"
+              sourceElement="#910e7fb9-9f88-4baa-8b8b-74c2d567d3e2"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="4dfe657e-d0a6-469c-bca4-0e9ce1818626" name="Control Subsystem" actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="2acbc3d4-ff24-4507-a1b0-176410001e88" targetElement="#8c24a866-1911-4f22-8eed-e6b7a09934c1"
+              sourceElement="#4dfe657e-d0a6-469c-bca4-0e9ce1818626"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="9692adca-58de-4bf7-bed9-f8978e710187" name="Mechanical Subsystem"
+            actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="948f835e-716b-424f-ad81-d7a21476e848" targetElement="#8c77a1bd-ad59-4393-a923-b3a7a8a1186a"
+              sourceElement="#9692adca-58de-4bf7-bed9-f8978e710187"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="07e5cec6-29aa-4384-874f-47fb7eaad24f" name="Electrical Subsystem"
+            actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="469a7837-5c5f-4e51-bd05-31c206c78b24" targetElement="#77d9cc1f-9049-4961-b74a-d55d08da4155"
+              sourceElement="#07e5cec6-29aa-4384-874f-47fb7eaad24f"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="681a356c-61ec-4279-b999-576795e28368" name="Ground Station Operator"
+            actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="e25b2f03-76f3-4efa-acb7-054b81097398" targetElement="#338ed037-f5bb-42b1-9628-c67a1715b885"
+              sourceElement="#681a356c-61ec-4279-b999-576795e28368"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="9d4147e4-cd1e-4521-a2d0-dbb17a18049e" name="Ground Segment" actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="99e05aea-e6ce-41bc-bdd4-e9028a98f68a" targetElement="#c5534695-6352-4cd4-9987-e1fb19a4e662"
+              sourceElement="#9d4147e4-cd1e-4521-a2d0-dbb17a18049e"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="dc65226d-710d-4655-9cfa-cdb2c44bdc94" name="Space Segment" actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="ce2a658b-dc90-4fb6-a908-8bb58717213d" targetElement="#7cc61838-afb1-41e0-927b-5777681494b8"
+              sourceElement="#dc65226d-710d-4655-9cfa-cdb2c44bdc94"/>
         </ownedSystemComponents>
       </ownedSystemComponentPkg>
       <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="ced4339f-8253-48c8-845b-2ad5ba7cec0f"
