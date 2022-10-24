@@ -6,6 +6,7 @@ CAPELLA_VER=5.1.0
 # outputs of the export.
 results_folder=${1:-/workdir}
 mkdir -p ${results_folder}
+mkdir -p "/workdir/docs/validation"
 
 # Import the project into the workspace and validate it
 xvfb-run -s "-screen 0 1280x720x24" \
@@ -15,7 +16,6 @@ capella -nosplash -consoleLog \
 -data /capella-workspace \
 -import "/workdir" \
 -input "/workdir/obc-model.aird" \
--mkdir "/workdir/docs/validation" \
 -outputfolder "/workdir/docs/validation" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
