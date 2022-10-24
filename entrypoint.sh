@@ -6,7 +6,7 @@ CAPELLA_VER=5.1.0
 # outputs of the export.
 results_folder=${1:-/workdir}
 mkdir -p ${results_folder}
-mkdir -p "/workdir/docs/validation"
+# mkdir -p "/workdir/docs/validation"
 
 # Import the project into the workspace and validate it
 xvfb-run -s "-screen 0 1280x720x24" \
@@ -16,7 +16,7 @@ capella -nosplash -consoleLog \
 -data /capella-workspace \
 -import "/workdir" \
 -input "/workdir/obc-model.aird" \
--outputfolder "/workdir/docs/validation" \
+-outputfolder "/workdir/validation" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
 
@@ -29,13 +29,13 @@ capella -nosplash -consoleLog \
 -appid org.polarsys.kitalpha.doc.gen.business.capella.commandline \
 -data /capella-workspace \
 -filepath "/workdir/obc-model.aird" \
--outputfolder "/workdir/docs/html" \
+-outputfolder "/workdir/html" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
 
 # Copy the validation and html output to the ${results_folder}/ that is mapped as a volume
-cp -r "/workdir/docs/html" ${results_folder}/html_export
-cp -r "/workdir/docs/validation" ${results_folder}/validation
+cp -r "/workdir/html" ${results_folder}/html_export
+cp -r "/workdir/validation" ${results_folder}/validation
 
 # Create index.html from stub
 sed 's/obc-model/g' index_stub.html > ${results_folder}/index.html
