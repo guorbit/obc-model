@@ -13,9 +13,9 @@ capella -nosplash -consoleLog \
 -application org.polarsys.capella.core.commandline.core \
 -appid org.polarsys.capella.core.validation.commandline \
 -data /capella-workspace \
--import "." \
--input "/obc-model.aird" \
--outputfolder "/docs/validation" \
+-import "/workdir" \
+-input "/workdir/obc-model.aird" \
+-outputfolder "/workdir/docs/validation" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
 
@@ -27,14 +27,14 @@ capella -nosplash -consoleLog \
 -application org.polarsys.capella.core.commandline.core \
 -appid org.polarsys.kitalpha.doc.gen.business.capella.commandline \
 -data /capella-workspace \
--filepath "/obc-model.aird" \
--outputfolder "/docs/html" \
+-filepath "/workdir/obc-model.aird" \
+-outputfolder "/workdir/docs/html" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
 
 # Copy the validation and html output to the ${results_folder}/ that is mapped as a volume
-cp -r "/opt/capella-${CAPELLA_VER}/docs/html" ${results_folder}/html_export
-cp -r "/opt/capella-${CAPELLA_VER}/docs/validation" ${results_folder}/validation
+cp -r "/workdir/docs/html" ${results_folder}/html_export
+cp -r "/workdir/docs/validation" ${results_folder}/validation
 
 # Create index.html from stub
 sed 's/obc-model/g' index_stub.html > ${results_folder}/index.html
