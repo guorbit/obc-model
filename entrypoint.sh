@@ -27,7 +27,7 @@ capella -nosplash -consoleLog \
 -application org.polarsys.capella.core.commandline.core \
 -appid org.polarsys.kitalpha.doc.gen.business.capella.commandline \
 -data /capella-workspace \
--filepath "/obc-model/obc-model.aird" \
+-input "/obc-model/obc-model.aird" \
 -outputfolder "/obc-model/html" \
 -logfile ${results_folder}/log.html \
 -forceoutputfoldercreation
