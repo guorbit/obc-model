@@ -23,4 +23,11 @@ jobs:
       -
         name: Map model directory and run Docker container
         run: docker run --init -v `pwd`:/workdir capella-html-exporter
-
+        args:
+          - /artifacts
+      -
+        name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Documentation
+          path: artifacts
