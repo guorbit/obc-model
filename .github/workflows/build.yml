@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  # triggered by push events on all branches
+  push
+
+jobs:
+  # build and run the Docker container to validate the model and generate the documentation
+  build:
+    # run on Linux to use Docker
+    runs-on: ubuntu-latest
+
+    steps:
+      # checkout in GitHub workspace
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Make entrypoint.sh executable
+        run: chmod +x entrypoint.sh
+
+      - name: Build Docker container
+        run: docker build -t capella-html-exporter .
+
+      # run with bind mount of Capella model directory
+      # arguments are passed to entrypoint.sh:
+      # - results_folder = artifacts (directory under GitHub workspace in host)
+      - name: Run Docker container
+        run: docker run --init -v `pwd`:/workdir capella-html-exporter artifacts
+
+      # upload from GitHub workspace
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Documentation
+          path: artifacts
+
