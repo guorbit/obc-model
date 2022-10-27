@@ -1,7 +1,9 @@
 name: CID
 
 on:
-  # triggered by push events on main only
+  # can be manually triggered
+  workflow_dispatch
+  # automatically triggered by push events on main only
   push:
     branches:
       - 'main'
