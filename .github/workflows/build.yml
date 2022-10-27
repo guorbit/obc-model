@@ -4,8 +4,9 @@ on:
   # triggered by push events on all branches except for main
   push:
     branches:
-      - '**'    # includes everything
-      - '!main' # excludes main
+      - '**'        # includes everything
+      - '!main'     # excludes main
+      - '!cd-test'  # excludes cd-test for testing
 
 jobs:
   # build and run the Docker container to validate the model and generate the documentation

@@ -4,7 +4,7 @@ on:
   # triggered by push events on main only
   push:
     branches:
-      - 'main'
+      - 'cd-test' # includes cd-test for testing
 
 jobs:
   # build and run the Docker container to validate the model and generate the documentation
