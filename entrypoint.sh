@@ -37,4 +37,4 @@ cp -r "/workdir/obc-model/html" ${results_folder}/html_export
 cp -r "/workdir/obc-model/validation" ${results_folder}/validation
 
 # Create index.html from stub
-# sed 's/obc-model/OBC Model/g' index_stub.html > ${results_folder}/index.html
+sed 's/model-name-to-replace/OBC Model/g' index_stub.html > ${results_folder}/index.html
