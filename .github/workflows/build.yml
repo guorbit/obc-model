@@ -1,6 +1,8 @@
 name: CI
 
 on:
+  # triggered when refereneced in another workflow
+  workflow_call:
   # automatically triggered by push events on all branches except for main
   push:
     branches:
