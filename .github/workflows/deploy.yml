@@ -13,11 +13,13 @@ jobs:
   # build and run the Docker container to validate the model and generate the documentation
   # then publish the HTML artifacts to GitHub Pages
   build:
+    runs-on: ubuntu-latest
     # validate the model
     uses: ./.github/workflows/build.yml
 
   # publish from GitHub workspace
   deploy:
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy HTML to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
