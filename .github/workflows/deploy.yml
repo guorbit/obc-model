@@ -13,7 +13,6 @@ jobs:
   # build and run the Docker container to validate the model and generate the documentation
   # then publish the HTML artifacts to GitHub Pages
   build:
-    runs-on: ubuntu-latest
     # validate the model
     uses: ./.github/workflows/build.yml
 
