@@ -26,6 +26,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: Documentation
+          path: artifacts
       - name: Deploy HTML to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
