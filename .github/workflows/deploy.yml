@@ -6,17 +6,19 @@ on:
   # automatically triggered by push events on main only
   push:
     branches:
-      - 'main'
+      # - 'main'
+      - '**'
 
 jobs:
   # build and run the Docker container to validate the model and generate the documentation
   # then publish the HTML artifacts to GitHub Pages
-  deploy:
+  build:
     # validate the model
     uses: ./.github/workflows/build.yml
 
+  # publish from GitHub workspace
+  deploy:
     steps:
-      # publish from GitHub workspace
       - name: Deploy HTML to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
