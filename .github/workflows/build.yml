@@ -6,7 +6,7 @@ on:
   # automatically triggered by push events on all branches except for main
   push:
     branches:
-      # - '**'        # includes everything
+      - '**'        # includes everything
       - '!main'     # excludes main
 
 jobs:
