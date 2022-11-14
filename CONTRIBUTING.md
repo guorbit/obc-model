@@ -60,7 +60,7 @@ model/{your-name}-{scenario-name(s)}
 
 ### Commit and Push
 
-`git add obc-model.aird obc-model.afm`
+`git add obc-model.aird obc-model.capella`
 
 Execute `git commit` and enter your commit message.
 
