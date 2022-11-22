@@ -1,8 +1,13 @@
 name: CI
 
 on:
-  # triggered by push events on all branches
-  push
+  # triggered when refereneced in another workflow
+  workflow_call:
+  # automatically triggered by push events on all branches except for main
+  push:
+    branches:
+      - '**'        # includes everything
+      - '!main'     # excludes main
 
 jobs:
   # build and run the Docker container to validate the model and generate the documentation
