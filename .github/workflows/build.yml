@@ -6,8 +6,8 @@ on:
   # automatically triggered by push events on all branches except for main
   push:
     branches:
-      - '**'        # includes everything
-      - '!main'     # excludes main
+      - 'model/*'	# run on model branches
+      - 'cid-test'	# test run on development branch
 
 jobs:
   # build and run the Docker container to validate the model and generate the documentation
@@ -39,3 +39,7 @@ jobs:
           name: Documentation
           path: artifacts
 
+      # Check with validation script
+      - name: Check validation
+        run: python ValidationFiles/Validation.py artifacts/validation/obc-model/obc-model.aird/validation-results.html
+	run: exit $?
