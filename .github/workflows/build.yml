@@ -41,4 +41,4 @@ jobs:
 
       # Check with validation script
       - name: Check validation
-        run: python ValidationFiles/Validation.py artifacts/validation/obc-model/obc-model.aird/validation-results.html; exit $?
+        run: python3 ValidationFiles/Validation.py artifacts/validation/obc-model/obc-model.aird/validation-results.html; exit $?
