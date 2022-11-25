@@ -2448,18 +2448,6 @@
                   id="48ce7c51-71c8-433a-87f0-5c8fce334f46" name="FOP 3"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="7e623fbd-c9d8-49ef-954d-205ecfaa2a96" name="FOP 4"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="a5a364c8-6ae8-49aa-aa5d-d1b18ff6b3b4" name="FOP 1">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="f910fd38-0325-42ed-8f71-9a4759873f5b" targetElement="#b4544e49-4d21-48f0-9183-888fc176486a"
-                    sourceElement="#a5a364c8-6ae8-49aa-aa5d-d1b18ff6b3b4"/>
-              </outputs>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="f06ecbac-c4f5-4e27-8e02-a261d2abbcea" name="FOP 3">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="c5700470-fde8-4f92-8dc1-15848b5f1db0" targetElement="#b6934dc7-9950-4f3a-ace6-1bbfbb108624"
-                    sourceElement="#f06ecbac-c4f5-4e27-8e02-a261d2abbcea"/>
-              </outputs>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="9b1bad5f-106f-4f92-ad66-63cf6f12c945" targetElement="#c750b2c9-ee88-4f7e-9b31-99eb63e45693"
                   sourceElement="#9f367178-7d21-4444-82bb-a8df395a48f5"/>
@@ -2503,23 +2491,11 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="d26f69b6-c9a9-464e-9ab1-111a378f2210" name="Receive mode change packet bundle">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="a0f87a31-6ee1-4615-a0fa-4581bd366237" name="FIP 1">
-              <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                  id="95542d3a-8992-4014-a69a-a12136ca7b9f" targetElement="#4d53aa20-0ffe-4446-a457-3daddc2c5aa9"
-                  sourceElement="#a0f87a31-6ee1-4615-a0fa-4581bd366237"/>
-            </inputs>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="351613c1-e5f6-4c01-a91d-e9f5388885a8" name="FOP 3">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
                   id="01501ea2-b2f0-4023-abf8-23fc3ecc98ae" targetElement="#8166dcc3-b02a-4e48-8d9d-c6a97d9776c2"
                   sourceElement="#351613c1-e5f6-4c01-a91d-e9f5388885a8"/>
-            </outputs>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="2231ac1a-46ca-43fb-a873-6ac47036b2d7" name="FOP 1">
-              <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                  id="3903d1ec-643d-49c7-87de-58e6e8011e73" targetElement="#5850573c-991f-4ee9-b5c9-8fbab914d407"
-                  sourceElement="#2231ac1a-46ca-43fb-a873-6ac47036b2d7"/>
             </outputs>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="519688d1-5fa8-46c3-bf82-8254b2205a8f" targetElement="#40db9fe1-014f-48ff-a03c-10359ae0fbe3"
@@ -2826,13 +2802,6 @@
               id="f69d4627-d50a-438f-8f38-7e86ab328898" name="Mode change signal relayed execution"
               target="#e76605da-40e4-41d4-a21b-7cb23e98d2b6" source="#513c0560-1064-4676-8942-593910bb72d3"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="8bc685fb-a0e5-4cca-87e0-8257f3b7994d" name="Mode change packet bundle transmission"
-              target="#a0f87a31-6ee1-4615-a0fa-4581bd366237" source="#d790c3d6-f973-4e86-a89d-23dc982c581a">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="ba362eaa-abec-4ade-8353-eb9bb37b6b0e" targetElement="#c9c0f374-0fb2-4e00-a8a4-328486073ce1"
-                sourceElement="#8bc685fb-a0e5-4cca-87e0-8257f3b7994d"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="c168c302-dfc6-45cb-a496-49a92263e05d" name="Mode change outcome telemetry display"
               target="#d9e177ef-441c-4ba1-827f-d91e72e9f572" source="#590a825a-2443-43fd-8257-3ad7db387646">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
@@ -2866,13 +2835,6 @@
                 sourceElement="#c39551a6-608e-4cd2-a3da-7928cde57d36"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="6c8915af-715b-4ba1-bea3-f5f42a6485d7" name="Mode change packet bundle dump"
-              target="#44ff4ff2-1dab-4c08-9994-277f1808e183" source="#a5a364c8-6ae8-49aa-aa5d-d1b18ff6b3b4">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="962c2c56-64c8-401e-91f2-17f221d295e2" targetElement="#103261af-d9c6-41f1-9b8e-d407402a88bb"
-                sourceElement="#6c8915af-715b-4ba1-bea3-f5f42a6485d7"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="3cbd77b4-4671-4ff7-8db7-7c24cf0fc95c" name="Mode change decision"
               target="#d1719ff2-a9f3-431f-8bff-c2449c28322a" source="#cd19237c-9172-48ae-8a27-7edc502a3afe">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
@@ -2885,13 +2847,6 @@
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="efbe19ff-5265-4b33-ac1b-9fa3cc4eb133" targetElement="#228407f2-87af-412c-87d5-78c979457ebd"
                 sourceElement="#93c800ab-5256-42ef-9441-28cf5553bf30"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="576ae552-98ab-4f5b-a3f4-00bbc2fac2f0" name="Mode change packet bundle dump"
-              target="#719a3f85-6a01-4f96-8b7f-4c1e9886b2ae" source="#2231ac1a-46ca-43fb-a873-6ac47036b2d7">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="b05a8535-88cd-4096-bb31-6c7572e4cbb4" targetElement="#4a6d20d9-2868-4f19-a57b-5c472706f929"
-                sourceElement="#576ae552-98ab-4f5b-a3f4-00bbc2fac2f0"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="8e636679-9461-4c7b-8a88-982d1eea80a4" name="Mode change telemetry collection"
@@ -2932,13 +2887,6 @@
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="57b538be-7d8d-47b8-a1dc-b729b677157b" targetElement="#2113c396-e700-49a6-b91c-aba7629e12c6"
                 sourceElement="#36e567a3-a7b7-4c8a-9fec-bfad27d1a394"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="84b83269-00b7-4a78-8720-534b76451a11" name="Mode change packet bundle dump"
-              target="#7d3ba1f9-ec74-4656-b329-b94e33be6819" source="#f06ecbac-c4f5-4e27-8e02-a261d2abbcea">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="fdb02fb6-c4f2-4429-be9d-2ddf5aba0d39" targetElement="#a7f252f1-a15d-4c2b-8b7e-81d0c076601f"
-                sourceElement="#84b83269-00b7-4a78-8720-534b76451a11"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="7adc9257-a22c-4562-b405-77cc8116519c" name="Mode change evaluation telemetry"
