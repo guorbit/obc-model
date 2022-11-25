@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - 'model/*'	# run on model branches
-      - 'cid-test'	# test run on development branch
 
 jobs:
   # build and run the Docker container to validate the model and generate the documentation
