@@ -1,0 +1,34 @@
+name: CD
+
+on:
+  # can be manually triggered
+  workflow_dispatch:
+  # automatically triggered by push events on main only
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  # build and run the Docker container to validate the model and generate the documentation
+  # then publish the HTML artifacts to GitHub Pages
+  build:
+    # validate the model
+    uses: ./.github/workflows/build.yml
+
+  # publish from GitHub workspace
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      # Download from GitHub workspace
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: Documentation
+          path: artifacts
+      - name: Deploy HTML to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: artifacts
+
