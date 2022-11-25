@@ -6,8 +6,7 @@ on:
   # automatically triggered by push events on all branches except for main
   push:
     branches:
-      - '**'        # includes everything
-      - '!main'     # excludes main
+      - 'model/*'	# run on model branches
 
 jobs:
   # build and run the Docker container to validate the model and generate the documentation
@@ -39,3 +38,14 @@ jobs:
           name: Documentation
           path: artifacts
 
+      # Setup python with BS
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with: 
+          python-version: '3.x'
+      - name: Install dependencies
+        run: python -m pip install beautifulsoup4
+        
+      # Check with validation script
+      - name: Check validation
+        run: python ValidationFiles/Validation.py artifacts/validation/obc-model/obc-model.aird/validation-results.html; exit $?
