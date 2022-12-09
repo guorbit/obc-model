@@ -446,126 +446,210 @@
         <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="f9587bb8-9603-4476-ae9b-a5c8ed2fbd20"/>
         <ownedRequirements xsi:type="Requirements:Folder" id="32945021-76ac-43b5-861b-fecd5db12787"
             ReqIFName="OBC Requirements">
-          <ownedRequirements xsi:type="Requirements:Requirement" id="2f53cb49-8fd5-4a9a-941b-0648ba8421f9"
-              ReqIFIdentifier="AST-OBC-F-001" ReqIFName="OBCRequirement001" ReqIFText="The OBC shall manage system-wide mode transitions automatically initiated by a trigger event."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="0a11edf4-c31c-4188-a5ea-fb7d18ea1fee"
-              ReqIFIdentifier="AST-OBC-F-012" ReqIFName="OBCRequirement012" ReqIFText="The OBC shall regularly poll the Communication Subsystem for any received transmissions."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="aa711cd5-6199-4f50-8e21-f1930027b112"
-              ReqIFIdentifier="AST-OBC-F-021" ReqIFName="OBCRequirement023" ReqIFText="The OBC shall overwrite the value of any configurable parameter upon receiving the appropriate telecommand."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="44fbab2b-20ab-4f82-a794-ec47250ed794"
-              ReqIFIdentifier="AST-OBC-F-030" ReqIFName="OBCRequirement034" ReqIFText="The OBC shall generate a &quot;warning-tier&quot; subsystem status data point whenever a parameter is measured outside its nominal range."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="6ac19e70-c68b-491f-ac77-67c178b91d6b"
-              ReqIFIdentifier="AST-OBC-F-040" ReqIFName="OBCRequirement045" ReqIFText="The OBC shall hard reset individual subsystems."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="9e5d9707-ccb8-47b8-9599-f0e5a7937ccd"
-              ReqIFIdentifier="AST-OBC-F-051" ReqIFName="OBCRequirement056" ReqIFText="The spacecraft time shall not overflow over the nominal mission lifetime."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="e99f93dd-488c-4b0f-9b8f-a6ff59c907bf"
-              ReqIFIdentifier="AST-OBC-F-002" ReqIFName="OBCRequirement002" ReqIFText="The OBC shall manage system-wide mode transition initiated by telecommand."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="87ba29f6-02f2-4c39-b10d-53b5ace39d6d"
-              ReqIFIdentifier="AST-OBC-F-003" ReqIFName="OBCRequirement003" ReqIFText="The OBC shall initiate transition to the system-wide nominal mode of operation after successful completion of the initialisation sequence."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="f674da06-9037-4473-8f97-0587d8adbc27"
-              ReqIFIdentifier="AST-OBC-F-004" ReqIFName="OBCRequirement004" ReqIFText="Unsuccessful steps of the initialisation sequence shall be (automatically? manually?) triggered until successful execution."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="f403e279-172c-465f-a32c-4b09e069731d"
-              ReqIFIdentifier="AST-OBC-F-005" ReqIFName="OBCRequirement005" ReqIFText="Prior to inititialisation, the OBC shall regularly poll the Control Subsystem for detection of tumbling attitude."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="0195edc5-31fa-43aa-8bd0-29a49cf42e63"
-              ReqIFIdentifier="AST-OBC-F-006" ReqIFName="OBCRequirement006" ReqIFText="Detection of tumbling attitude shall trigger the initialisation sequence."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="1b586f7a-eeda-4181-a510-1da0d9ca7b75"
-              ReqIFIdentifier="AST-OBC-F-007" ReqIFName="OBCRequirement007" ReqIFText="As part of the initialisation sequence, the OBC shall issue a de-tumble signal to the Control Subsystem."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="0d014598-9a55-42da-8bbc-9b4637a84baa"
-              ReqIFIdentifier="AST-OBC-F-008" ReqIFName="OBCRequirement008" ReqIFText="As part of the initialisation sequence, the OBC shall issue a solar array deployment signal to the Mechanical Subsystem."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="19c7617b-c5d9-4ff6-80b0-bdeb4dafbc6f"
-              ReqIFIdentifier="AST-OBC-F-009" ReqIFName="OBCRequirement009" ReqIFText="As part of the initialisation sequence, the OBC shall issue an antenna deployment signal to the Mechanical Subsystem."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="3a922b63-0fa0-4446-b372-5c6bca0a2fd6"
-              ReqIFIdentifier="AST-OBC-F-010" ReqIFName="OBCRequirement010" ReqIFText="The OBC shall initiate transition to the system-wide &quot;end-of-life&quot; mode of operation upon telecommand."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="44c0946f-321a-4eb5-89ca-a3fae0beb84d"
-              ReqIFIdentifier="AST-OBC-F-011" ReqIFName="OBCRequirement011" ReqIFText="As part of the transition to the system-wide &quot;end-of-life&quot; mode of operation, the OBC shall issue a dragsail deployment signal to the Mechanical Subsystem,"/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="6e55bef9-7e9d-466d-86f3-6ef750950007"
-              ReqIFIdentifier="AST-OBC-P-001" ReqIFName="OBCRequirement013" ReqIFText="The period between polls to the Communication Subsystem for any received transmissions shall be T (large) or lower."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="d6242751-face-44a1-87db-ebc43abef072"
-              ReqIFIdentifier="AST-OBC-F-013" ReqIFName="OBCRequirement014" ReqIFText="The OBC shall evaluate the contents of any received transmissions to determine establishment of contact with the Ground Station."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="090bccd9-1598-4502-89fd-507023d97697"
-              ReqIFIdentifier="AST-OBC-F-014" ReqIFName="OBCRequirement015" ReqIFText="Establishment of contact with the Ground Station shall trigger a system-wide mode change to a the appropriate &quot;uplink&quot; state."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="9ec478c6-c3af-4a04-a6b8-0c81e1ba0a16"
-              ReqIFIdentifier="AST-OBC-F-015" ReqIFName="OBCRequirement016" ReqIFText="The OBC shall regularly poll the Control Subsystem for the spacecraft location over the Earth."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="a87f7d51-7316-4b19-9217-2f02ce5bb9be"
-              ReqIFIdentifier="AST-OBC-P-002" ReqIFName="OBCRequirement017" ReqIFText="The period between polls to the Control Subsystem for the spacecraft location shall be t (small) or lower."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="99c81102-ce6d-457a-8bdb-781a9006ede6"
-              ReqIFIdentifier="AST-OBC-F-016" ReqIFName="OBCRequirement018" ReqIFText="The OBC shall compare the spacecraft location with the configured Areas of Interest to determine entry into an Area of Interest."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="356b45d2-2827-41d3-b7fd-0c98fda01609"
-              ReqIFIdentifier="AST-OBC-F-017" ReqIFName="OBCRequirement019" ReqIFText="Entry into an Area of Interest shall trigger a system-wide mode change to the appropriate &quot;imaging&quot; state."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="766c1d82-8171-4bca-93f1-ef47ad3eae15"
-              ReqIFIdentifier="AST-OBC-F-018" ReqIFName="OBCRequirement020" ReqIFText="The OBC shall configure a new Area of Interest upon receiving the appropriate telecommand."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="c94ea195-231e-4822-b725-d757d9f3acab"
-              ReqIFIdentifier="AST-OBC-F-019" ReqIFName="OBCRequirement021" ReqIFText="The OBC shall remove a configured Area of Interest upon receiving the appropriate telecommand."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="ee5a083f-7632-4259-bf7c-6ccdfb6e0974"
-              ReqIFIdentifier="AST-OBC-F-020" ReqIFName="OBCRequirement022" ReqIFText="The OBC shall retrieve the values of any configurable parameter upon receiving the appropriate telecommand."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="1718b67f-2138-442b-ace9-177a31700b5e"
-              ReqIFIdentifier="AST-OBC-F-022" ReqIFName="OBCRequirement024" ReqIFText="The OBC shall monitor the health of each subsystem through regular heartbeat signals."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="d84eb822-2ff6-4cb6-9bb8-74a1e590b163"
-              ReqIFIdentifier="AST-OBC-F-023" ReqIFName="OBCRequirement025" ReqIFText="The OBC shall transmit health metrics for each subsystem as telemetry."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="bc1407d0-a231-4961-bac9-05cefecc129c"
-              ReqIFIdentifier="AST-OBC-F-024" ReqIFName="OBCRequirement026" ReqIFText="Subsystem health metrics shall include the timestamp of the latest heartbeat signal received."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="86f68ad8-1a92-4b1f-9e22-730749eaa8db"
-              ReqIFIdentifier="AST-OBC-F-025" ReqIFName="OBCRequirement027" ReqIFText="Subsystem health metrics shall include the rolling average time between heartbeat signals over a period of parametrised length."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="8c108798-76c8-435c-afad-0793b72fff96"
-              ReqIFIdentifier="AST-OBC-F-026" ReqIFName="OBCRequirement028" ReqIFText="The OBC shall monitor the status of each subsystem through regular data collection."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="0bf424d0-81ed-4cc2-88af-d98d2758de88"
-              ReqIFIdentifier="AST-OBC-F-027" ReqIFName="OBCRequirement029" ReqIFText="The OBC shall transmit status data for each subsystem as telemetry."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="a733ae67-9c36-40a7-a26e-4bfa5e65ed58"
-              ReqIFIdentifier="AST-OBC-F-028" ReqIFName="OBCRequirement030" ReqIFText="The OBC shall regularly generate &quot;housekeeping-tier&quot; subsystem status data points during Ground Station coverage."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="6ee8adad-94d2-49be-98c9-7b947f1df4f9"
-              ReqIFIdentifier="AST-OBC-P-003" ReqIFName="OBCRequirement031" ReqIFText="The period of generation of &quot;housekeeping-tier&quot; subsystem status data points during Ground Station coverage shall be t (small) or lower."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="579b7343-9f30-4b58-a291-9e94595d3d29"
-              ReqIFIdentifier="AST-OBC-F-029" ReqIFName="OBCRequirement032" ReqIFText="The OBC should generate &quot;housekeeping-tier&quot; subsystem status data points outside of Ground Station coverage."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="ba6c2e9a-ab61-4631-8731-b0a10052b7db"
-              ReqIFIdentifier="AST-OBC-p-004" ReqIFName="OBCRequirement033" ReqIFText="The period of generation of &quot;housekeeping-tier&quot; subsystem status data points outside of Ground Station coverage should be T (large) or lower."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="94c3db1d-2914-4aba-8f60-9c300516fe62"
-              ReqIFIdentifier="AST-OBC-F-031" ReqIFName="OBCRequirement035" ReqIFText="The OBC shall generate an &quot;event-tier&quot; subsystem status data point at the time of each trigger event."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="99aaaa4c-e7ec-4778-a91d-20a9e0c23a0d"
-              ReqIFIdentifier="AST-OBC-F-032" ReqIFName="OBCRequirement036" ReqIFText="The OBC shall store all generated subsystem status data in non-volatile memory."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="2e056538-59b1-4430-acbd-d99cfa132339"
-              ReqIFIdentifier="AST-OBC-P-005" ReqIFName="OBCRequirement037" ReqIFText="The retention time for generated subsystem status data shall be 2 or more times the longest non-coverage period in the mission definition."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="c2c61ae0-540b-47f3-b369-e1583652d7ea"
-              ReqIFIdentifier="AST-OBC-F-033" ReqIFName="OBCRequirement038" ReqIFText="The OBC non-volatile memory shall provide EDAC (Error Detection And Correction) logic."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="de43f66f-0d31-4cbc-8a10-b83cf7ac6f05"
-              ReqIFIdentifier="AST-OBC-F-034" ReqIFName="OBCRequirement039" ReqIFText="The OBC should regularly compare all items stored in each individual non-volatile memory unit against the consensus from the EDAC logic to identify corruption."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="ae0c5b82-5c3c-4e9a-8154-f3e431e7723c"
-              ReqIFIdentifier="AST-OBC-F-035" ReqIFName="OBCRequirement040" ReqIFText="The OBC should overwrite any corrupted item in an individual non-volatile memory unit with the consensus from the EDAC logic."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="e172ad81-0854-49b8-81a9-0ac23a4b40cc"
-              ReqIFIdentifier="AST-OBC-F-036" ReqIFName="OBCRequirement041" ReqIFText="The OBC should store in non-volatile memory a copy of every assignment and instruction loaded in volatile memory."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="12dfc155-364a-466b-acfb-1094b86ba877"
-              ReqIFIdentifier="AST-OBC-F-037" ReqIFName="OBCRequirement042" ReqIFText="The OBC should regularly compare all assignments and instructions in volatile memory against their respective copies stored in non-volatile memory to identify corruption."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="c38c5e65-cbf8-4757-902e-fd8e5a9e7d7a"
-              ReqIFIdentifier="AST-OBC-F-038" ReqIFName="OBCRequirement043" ReqIFText="The OBC should overwrite any corrupted assignment or instruction with its copy stored in non-volatile memory."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="aa2cc6d9-116f-4e81-81c4-8c3998070a3a"
-              ReqIFIdentifier="AST-OBC-F-039" ReqIFName="OBCRequirement044" ReqIFText="The OBC shall power cycle individual subsystems."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="2343230d-370a-4d5d-92b7-f6571943cb0d"
-              ReqIFIdentifier="AST-OBC-F-041" ReqIFName="OBCRequirement046" ReqIFText="The OBC should soft reset individual subsystems that support this operation."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="378257e7-79f1-4656-83f3-60004d343aa6"
-              ReqIFIdentifier="AST-OBC-F-042" ReqIFName="OBCRequirement047" ReqIFText="The OBC shall store a copy of the last known-working version of the binary software for each hardware node."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="f32cfc0f-a63c-4083-8f49-b5028e61d7d9"
-              ReqIFIdentifier="AST-OBC-F-043" ReqIFName="OBCRequirement048" ReqIFText="The OBC shall reprogram any hardware node upon receiving the appropriate telecommand."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="4036e092-8893-4b2c-9fb5-fc549e2602e7"
-              ReqIFIdentifier="AST-OBC-F-044" ReqIFName="OBCRequirement049" ReqIFText="The OBC shall detect pre-boot (binary corruption) or boot-time (software hanging) failure of reprogrammed hardware nodes."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="dc7150cd-2bf3-409d-aaa8-31209b2fd28c"
-              ReqIFIdentifier="AST-OBC-F-045" ReqIFName="OBCRequirement050" ReqIFText="The OBC shall roll-back reprogrammed hardware nodes experiencing failure to the last known-working version of their binary software."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="2e5e46b1-9918-4301-85ff-e3a30f26c3ba"
-              ReqIFIdentifier="AST-OBC-F-046" ReqIFName="OBCRequirement051" ReqIFText="The OBC shall check the integrity of all transmitted telecommand packets through a digital signature."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="4a8db81c-0e81-478e-9a66-59f8b6b9f543"
-              ReqIFIdentifier="AST-OBC-F-047" ReqIFName="OBCRequirement052" ReqIFText="The OBC shall include an identifier indicating the originating spacecraft to all transmitted payload and telemetry packets."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="043e0d38-56c0-4123-99fb-f413fa5924ef"
-              ReqIFIdentifier="AST-OBC-F-048" ReqIFName="OBCRequirement053" ReqIFText="The OBC shall keep the spacecraft time."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="afcc86cd-c78c-4417-9823-49735b9c5958"
-              ReqIFIdentifier="AST-OBC-F-049" ReqIFName="OBCRequirement054" ReqIFText="The instantaneous error of the spacecraft time shall be 100ms or lower at all times."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="08e4102f-f95d-4501-993e-4c77cb2baeab"
-              ReqIFIdentifier="AST-OBC-F-050" ReqIFName="OBCRequirement055" ReqIFText="The cumulative drift of the spacecraft time shall be 100ppm or lower over the nominal mission lifetime."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="af9fef6b-d675-46cc-a73d-b702d5e8758f"
-              ReqIFIdentifier="AST-OBC-F-052" ReqIFName="OBCRequirement057" ReqIFText="The OBC shall adjust the spacecraft time through regular synchronisation exchanges with the Ground Station."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="6aaa985e-dc16-4f71-8192-9339ebb31eef"
-              ReqIFIdentifier="AST-OBC-P-006" ReqIFName="OBCRequirement058" ReqIFText="The OBC's CPU load arising from its periodic routines shall be 80% or lower."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="41205d51-e3eb-4940-b09c-abcbe8d9f04c"
-              ReqIFIdentifier="AST-OBC-P-007" ReqIFName="OBCRequirement059" ReqIFText="The OBC's MTBF (Mean Time Between recoverable Failures) shall be within X% (large) of the nominal mission lifetime."/>
-          <ownedRequirements xsi:type="Requirements:Requirement" id="cf1152e0-84a3-4ca6-b07d-0dee82370f65"
-              ReqIFIdentifier="AST-OBC-P-008" ReqIFName="OBCRequirement060" ReqIFText="The OBC's MTTF (Mean Time To unrecoverable Failure) shall be within x% (small) of the nominal mission lifetime."/>
+          <ownedRequirements xsi:type="Requirements:Folder" id="47038e2c-9cac-4acf-a435-a55295a18f2b"
+              ReqIFName="01 Mode Handling">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="f403e279-172c-465f-a32c-4b09e069731d"
+                ReqIFIdentifier="A01-OBC-MOD-F-005" ReqIFName="OBCRequirement005"
+                ReqIFText="Prior to inititialisation, the OBC shall regularly poll the Control Subsystem for detection of tumbling attitude."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="1b586f7a-eeda-4181-a510-1da0d9ca7b75"
+                ReqIFIdentifier="A01-OBC-MOD-F-007" ReqIFName="OBCRequirement007"
+                ReqIFText="As part of the initialisation sequence, the OBC shall issue a de-tumble signal to the Control Subsystem."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="44c0946f-321a-4eb5-89ca-a3fae0beb84d"
+                ReqIFIdentifier="A01-OBC-MOD-F-011" ReqIFName="OBCRequirement011"
+                ReqIFText="As part of the transition to the system-wide &quot;end-of-life&quot; mode of operation, the OBC shall issue a dragsail deployment signal to the Mechanical Subsystem,"/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="a87f7d51-7316-4b19-9217-2f02ce5bb9be"
+                ReqIFIdentifier="A01-OBC-MOD-P-002" ReqIFName="OBCRequirement017"
+                ReqIFText="The period between polls to the Control Subsystem for the spacecraft location shall be t (small) or lower."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="87ba29f6-02f2-4c39-b10d-53b5ace39d6d"
+                ReqIFIdentifier="A01-OBC-MOD-F-003" ReqIFName="OBCRequirement003"
+                ReqIFText="The OBC shall initiate transition to the system-wide nominal mode of operation after successful completion of the initialisation sequence."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0d014598-9a55-42da-8bbc-9b4637a84baa"
+                ReqIFIdentifier="A01-OBC-MOD-F-008" ReqIFName="OBCRequirement008"
+                ReqIFText="As part of the initialisation sequence, the OBC shall issue a solar array deployment signal to the Mechanical Subsystem."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="d6242751-face-44a1-87db-ebc43abef072"
+                ReqIFIdentifier="A01-OBC-MOD-F-013" ReqIFName="OBCRequirement014"
+                ReqIFText="The OBC shall evaluate the contents of any received transmissions to determine establishment of contact with the Ground Station."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6ac19e70-c68b-491f-ac77-67c178b91d6b"
+                ReqIFIdentifier="A01-OBC-FLT-F-004" ReqIFName="OBCRequirement045"
+                ReqIFText="The OBC shall hard reset individual subsystems."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="99c81102-ce6d-457a-8bdb-781a9006ede6"
+                ReqIFIdentifier="A01-OBC-MOD-F-016" ReqIFName="OBCRequirement018"
+                ReqIFText="The OBC shall compare the spacecraft location with the configured Areas of Interest to determine entry into an Area of Interest."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="9ec478c6-c3af-4a04-a6b8-0c81e1ba0a16"
+                ReqIFIdentifier="A01-OBC-MOD-F-015" ReqIFName="OBCRequirement016"
+                ReqIFText="The OBC shall regularly poll the Control Subsystem for the spacecraft location over the Earth."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0195edc5-31fa-43aa-8bd0-29a49cf42e63"
+                ReqIFIdentifier="A01-OBC-MOD-F-006" ReqIFName="OBCRequirement006"
+                ReqIFText="Detection of tumbling attitude shall trigger the initialisation sequence."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="9e5d9707-ccb8-47b8-9599-f0e5a7937ccd"
+                ReqIFIdentifier="AST-OBC-RTC-P-003" ReqIFName="OBCRequirement056"
+                ReqIFText="The spacecraft time shall not overflow over the nominal mission lifetime."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="f674da06-9037-4473-8f97-0587d8adbc27"
+                ReqIFIdentifier="A01-OBC-MOD-F-004" ReqIFName="OBCRequirement004"
+                ReqIFText="Unsuccessful steps of the initialisation sequence shall be (automatically? manually?) triggered until successful execution."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="19c7617b-c5d9-4ff6-80b0-bdeb4dafbc6f"
+                ReqIFIdentifier="A01-OBC-MOD-F-009" ReqIFName="OBCRequirement009"
+                ReqIFText="As part of the initialisation sequence, the OBC shall issue an antenna deployment signal to the Mechanical Subsystem."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="e99f93dd-488c-4b0f-9b8f-a6ff59c907bf"
+                ReqIFIdentifier="A01-OBC-MOD-F-002" ReqIFName="OBCRequirement002"
+                ReqIFText="The OBC shall manage system-wide mode transition initiated by telecommand."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="090bccd9-1598-4502-89fd-507023d97697"
+                ReqIFIdentifier="A01-OBC-MOD-F-014" ReqIFName="OBCRequirement015"
+                ReqIFText="Establishment of contact with the Ground Station shall trigger a system-wide mode change to a the appropriate &quot;uplink&quot; state."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6e55bef9-7e9d-466d-86f3-6ef750950007"
+                ReqIFIdentifier="A01-OBC-MOD-P-001" ReqIFName="OBCRequirement013"
+                ReqIFText="The period between polls to the Communication Subsystem for any received transmissions shall be T (large) or lower."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0a11edf4-c31c-4188-a5ea-fb7d18ea1fee"
+                ReqIFIdentifier="A01-OBC-MOD-F-012" ReqIFName="OBCRequirement012"
+                ReqIFText="The OBC shall regularly poll the Communication Subsystem for any received transmissions."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="2f53cb49-8fd5-4a9a-941b-0648ba8421f9"
+                ReqIFIdentifier="A01-OBC-MOD-F-001" ReqIFName="OBCRequirement001"
+                ReqIFText="The OBC shall manage system-wide mode transitions automatically initiated by a trigger event."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="3a922b63-0fa0-4446-b372-5c6bca0a2fd6"
+                ReqIFIdentifier="A01-OBC-MOD-F-010" ReqIFName="OBCRequirement010"
+                ReqIFText="The OBC shall initiate transition to the system-wide &quot;end-of-life&quot; mode of operation upon telecommand."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="356b45d2-2827-41d3-b7fd-0c98fda01609"
+                ReqIFIdentifier="A01-OBC-MOD-F-017" ReqIFName="OBCRequirement019"
+                ReqIFText="Entry into an Area of Interest shall trigger a system-wide mode change to the appropriate &quot;imaging&quot; state."/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="3e930d44-736c-4939-a27b-9f37ef188236"
+              ReqIFName="02 Telecommand">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="766c1d82-8171-4bca-93f1-ef47ad3eae15"
+                ReqIFIdentifier="A01-OBC-T/C-F-001" ReqIFName="OBCRequirement020"
+                ReqIFText="The OBC shall configure a new Area of Interest upon receiving the appropriate telecommand."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="ee5a083f-7632-4259-bf7c-6ccdfb6e0974"
+                ReqIFIdentifier="A01-OBC-T/C-F-003" ReqIFName="OBCRequirement022"
+                ReqIFText="The OBC shall retrieve the values of any configurable parameter upon receiving the appropriate telecommand."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="c94ea195-231e-4822-b725-d757d9f3acab"
+                ReqIFIdentifier="A01-OBC-T/C-F-002" ReqIFName="OBCRequirement021"
+                ReqIFText="The OBC shall remove a configured Area of Interest upon receiving the appropriate telecommand."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="aa711cd5-6199-4f50-8e21-f1930027b112"
+                ReqIFIdentifier="A01-OBC-T/C-F-004" ReqIFName="OBCRequirement023"
+                ReqIFText="The OBC shall overwrite the value of any configurable parameter upon receiving the appropriate telecommand."/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="f61802c7-676a-4ef4-847c-c06626c199ce"
+              ReqIFName="03 Telemetry">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="94c3db1d-2914-4aba-8f60-9c300516fe62"
+                ReqIFIdentifier="A01-OBC-T/M-F-008" ReqIFName="OBCRequirement035"
+                ReqIFText="The OBC shall generate an &quot;event-tier&quot; subsystem status data point at the time of each trigger event."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="579b7343-9f30-4b58-a291-9e94595d3d29"
+                ReqIFIdentifier="A01-OBC-T/M-F-006" ReqIFName="OBCRequirement032"
+                ReqIFText="The OBC should generate &quot;housekeeping-tier&quot; subsystem status data points outside of Ground Station coverage."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="86f68ad8-1a92-4b1f-9e22-730749eaa8db"
+                ReqIFIdentifier="A01-OBC-T/M-F-003" ReqIFName="OBCRequirement027"
+                ReqIFText="Subsystem health metrics shall include the rolling average time between heartbeat signals over a period of parametrised length."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="ba6c2e9a-ab61-4631-8731-b0a10052b7db"
+                ReqIFIdentifier="A01-OBC-T/M-P-002" ReqIFName="OBCRequirement033"
+                ReqIFText="The period of generation of &quot;housekeeping-tier&quot; subsystem status data points outside of Ground Station coverage should be T (large) or lower."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="d84eb822-2ff6-4cb6-9bb8-74a1e590b163"
+                ReqIFIdentifier="A01-OBC-T/M-F-001" ReqIFName="OBCRequirement025"
+                ReqIFText="The OBC shall transmit health metrics for each subsystem as telemetry."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6ee8adad-94d2-49be-98c9-7b947f1df4f9"
+                ReqIFIdentifier="A01-OBC-T/M-P-001" ReqIFName="OBCRequirement031"
+                ReqIFText="The period of generation of &quot;housekeeping-tier&quot; subsystem status data points during Ground Station coverage shall be t (small) or lower."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0bf424d0-81ed-4cc2-88af-d98d2758de88"
+                ReqIFIdentifier="A01-OBC-T/M-F-004" ReqIFName="OBCRequirement029"
+                ReqIFText="The OBC shall transmit status data for each subsystem as telemetry."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="bc1407d0-a231-4961-bac9-05cefecc129c"
+                ReqIFIdentifier="A01-OBC-T/M-F-002" ReqIFName="OBCRequirement026"
+                ReqIFText="Subsystem health metrics shall include the timestamp of the latest heartbeat signal received."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="a733ae67-9c36-40a7-a26e-4bfa5e65ed58"
+                ReqIFIdentifier="A01-OBC-T/M-F-005" ReqIFName="OBCRequirement030"
+                ReqIFText="The OBC shall regularly generate &quot;housekeeping-tier&quot; subsystem status data points during Ground Station coverage."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="44fbab2b-20ab-4f82-a794-ec47250ed794"
+                ReqIFIdentifier="A01-OBC-T/M-F-007" ReqIFName="OBCRequirement034"
+                ReqIFText="The OBC shall generate a &quot;warning-tier&quot; subsystem status data point whenever a parameter is measured outside its nominal range."/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="4ba4ebdd-a20a-4ed8-addc-f01bf9157ea5"
+              ReqIFName="04 FDIR">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="8c108798-76c8-435c-afad-0793b72fff96"
+                ReqIFIdentifier="A01-OBC-FLT-F-002" ReqIFName="OBCRequirement028"
+                ReqIFText="The OBC shall monitor the status of each subsystem through regular data collection."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="1718b67f-2138-442b-ace9-177a31700b5e"
+                ReqIFIdentifier="A01-OBC-FLT-F-001" ReqIFName="OBCRequirement024"
+                ReqIFText="The OBC shall monitor the health of each subsystem through regular heartbeat signals."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="4036e092-8893-4b2c-9fb5-fc549e2602e7"
+                ReqIFIdentifier="A01-OBC-FLT-F-008" ReqIFName="OBCRequirement049"
+                ReqIFText="The OBC shall detect pre-boot (binary corruption) or boot-time (software hanging) failure of reprogrammed hardware nodes."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="aa2cc6d9-116f-4e81-81c4-8c3998070a3a"
+                ReqIFIdentifier="A01-OBC-FLT-F-003" ReqIFName="OBCRequirement044"
+                ReqIFText="The OBC shall power cycle individual subsystems."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="378257e7-79f1-4656-83f3-60004d343aa6"
+                ReqIFIdentifier="A01-OBC-FLT-F-006" ReqIFName="OBCRequirement047"
+                ReqIFText="The OBC shall store a copy of the last known-working version of the binary software for each hardware node."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="2343230d-370a-4d5d-92b7-f6571943cb0d"
+                ReqIFIdentifier="A01-OBC-FLT-F-005" ReqIFName="OBCRequirement046"
+                ReqIFText="The OBC should soft reset individual subsystems that support this operation."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="f32cfc0f-a63c-4083-8f49-b5028e61d7d9"
+                ReqIFIdentifier="A01-OBC-FLT-F-007" ReqIFName="OBCRequirement048"
+                ReqIFText="The OBC shall reprogram any hardware node upon receiving the appropriate telecommand."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="dc7150cd-2bf3-409d-aaa8-31209b2fd28c"
+                ReqIFIdentifier="A01-OBC-FLT-F-009" ReqIFName="OBCRequirement050"
+                ReqIFText="The OBC shall roll-back reprogrammed hardware nodes experiencing failure to the last known-working version of their binary software."/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="6adb3467-b18c-4deb-b186-92d5b7da9cfb"
+              ReqIFName="99 Miscellaneous">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6aaa985e-dc16-4f71-8192-9339ebb31eef"
+                ReqIFIdentifier="A01-OBC-MSC-P-001" ReqIFName="OBCRequirement058"
+                ReqIFText="The OBC's CPU load arising from its periodic routines shall be 80% or lower."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="cf1152e0-84a3-4ca6-b07d-0dee82370f65"
+                ReqIFIdentifier="A01-OBC-MSC-P-003" ReqIFName="OBCRequirement060"
+                ReqIFText="The OBC's MTTF (Mean Time To unrecoverable Failure) shall be within x% (small) of the nominal mission lifetime."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="41205d51-e3eb-4940-b09c-abcbe8d9f04c"
+                ReqIFIdentifier="A01-OBC-MSC-P-002" ReqIFName="OBCRequirement059"
+                ReqIFText="The OBC's MTBF (Mean Time Between recoverable Failures) shall be within X% (large) of the nominal mission lifetime."/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="6acfebbf-f342-4ff6-aecb-35a2530f5d3a"
+              ReqIFName="05 Memory">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="e172ad81-0854-49b8-81a9-0ac23a4b40cc"
+                ReqIFIdentifier="A01-OBC-MEM-F-005" ReqIFName="OBCRequirement041"
+                ReqIFText="The OBC should store in non-volatile memory a copy of every assignment and instruction loaded in volatile memory."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="c38c5e65-cbf8-4757-902e-fd8e5a9e7d7a"
+                ReqIFIdentifier="A01-OBC-MEM-F-007" ReqIFName="OBCRequirement043"
+                ReqIFText="The OBC should overwrite any corrupted assignment or instruction with its copy stored in non-volatile memory."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="2e056538-59b1-4430-acbd-d99cfa132339"
+                ReqIFIdentifier="A01-OBC-MEM-P-001" ReqIFName="OBCRequirement037"
+                ReqIFText="The retention time for generated subsystem status data shall be 2 or more times the longest non-coverage period in the mission definition."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="c2c61ae0-540b-47f3-b369-e1583652d7ea"
+                ReqIFIdentifier="A01-OBC-MEM-F-002" ReqIFName="OBCRequirement038"
+                ReqIFText="The OBC non-volatile memory shall provide EDAC (Error Detection And Correction) logic."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="99aaaa4c-e7ec-4778-a91d-20a9e0c23a0d"
+                ReqIFIdentifier="A01-OBC-MEM-F-001" ReqIFName="OBCRequirement036"
+                ReqIFText="The OBC shall store all generated subsystem status data in non-volatile memory."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="12dfc155-364a-466b-acfb-1094b86ba877"
+                ReqIFIdentifier="A01-OBC-MEM-F-006" ReqIFName="OBCRequirement042"
+                ReqIFText="The OBC should regularly compare all assignments and instructions in volatile memory against their respective copies stored in non-volatile memory to identify corruption."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="ae0c5b82-5c3c-4e9a-8154-f3e431e7723c"
+                ReqIFIdentifier="A01-OBC-MEM-F-004" ReqIFName="OBCRequirement040"
+                ReqIFText="The OBC should overwrite any corrupted item in an individual non-volatile memory unit with the consensus from the EDAC logic."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="de43f66f-0d31-4cbc-8a10-b83cf7ac6f05"
+                ReqIFIdentifier="A01-OBC-MEM-F-003" ReqIFName="OBCRequirement039"
+                ReqIFText="The OBC should regularly compare all items stored in each individual non-volatile memory unit against the consensus from the EDAC logic to identify corruption."/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="d977f745-cadf-47ec-a221-bd74bbcc2bce"
+              ReqIFName="06 Time-Keeping">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="043e0d38-56c0-4123-99fb-f413fa5924ef"
+                ReqIFIdentifier="A01-OBC-RTC-F-001" ReqIFName="OBCRequirement053"
+                ReqIFText="The OBC shall keep the spacecraft time."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="af9fef6b-d675-46cc-a73d-b702d5e8758f"
+                ReqIFIdentifier="A01-OBC-FLT-F-002" ReqIFName="OBCRequirement057"
+                ReqIFText="The OBC shall adjust the spacecraft time through regular synchronisation exchanges with the Ground Station."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="08e4102f-f95d-4501-993e-4c77cb2baeab"
+                ReqIFIdentifier="A01-OBC-RTC-P-002" ReqIFName="OBCRequirement055"
+                ReqIFText="The cumulative drift of the spacecraft time shall be 100ppm or lower over the nominal mission lifetime."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="afcc86cd-c78c-4417-9823-49735b9c5958"
+                ReqIFIdentifier="A01-OBC-RTC-P-001" ReqIFName="OBCRequirement054"
+                ReqIFText="The instantaneous error of the spacecraft time shall be 100ms or lower at all times."/>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="d7c65d8b-b0f2-4dab-a8aa-09cab36adc91"
+              ReqIFName="07 Security">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="2e5e46b1-9918-4301-85ff-e3a30f26c3ba"
+                ReqIFIdentifier="A01-OBC-SEC-F-001" ReqIFName="OBCRequirement051"
+                ReqIFText="The OBC shall check the integrity of all transmitted telecommand packets through a digital signature."/>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="4a8db81c-0e81-478e-9a66-59f8b6b9f543"
+                ReqIFIdentifier="A01-OBC-SEC-F-002" ReqIFName="OBCRequirement052"
+                ReqIFText="The OBC shall include an identifier indicating the originating spacecraft to all transmitted payload and telemetry packets."/>
+          </ownedRequirements>
         </ownedRequirements>
       </ownedExtensions>
       <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="552af31a-8e59-450c-8818-944d2ce5e89f"/>
