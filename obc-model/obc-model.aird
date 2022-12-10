@@ -34,7 +34,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Function%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="obc-model.capella#f5f07d81-b9fe-467f-9caa-17fe545e0186"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ty2P8FeaEe2aRdAK7oHP_Q" name="[LAB] Root Logical Architecture" repPath="#_tyse8FeaEe2aRdAK7oHP_Q" changeId="f3e86c6a-ef4b-4b33-af0d-9b27131c0e3a">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ty2P8FeaEe2aRdAK7oHP_Q" name="[LAB] Root Logical Architecture" repPath="#_tyse8FeaEe2aRdAK7oHP_Q" changeId="bddace0b-55d2-479f-bfb2-bc1ec786f998">
         <eAnnotations xmi:type="description:DAnnotation" uid="_tzAA8FeaEe2aRdAK7oHP_Q" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tzAoAFeaEe2aRdAK7oHP_Q" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tzAoAVeaEe2aRdAK7oHP_Q" key="hide.computed.physical.links.filter" value="true"/>
@@ -96,7 +96,7 @@
         <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']"/>
         <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="obc-model.capella#70a845bf-5f7d-4d79-b87d-94c0eaef606e"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_aeTzIFkZEe2U3J5_S6bePA" name="[ES] Commanded, OBC-Bypassing Mode Change Scenario" repPath="#_aeRW4FkZEe2U3J5_S6bePA" changeId="0ba78ac4-20ff-4651-bb3a-d359cf41101a">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_aeTzIFkZEe2U3J5_S6bePA" name="[ES] Commanded, OBC-Bypassing Mode Change Scenario" repPath="#_aeRW4FkZEe2U3J5_S6bePA" changeId="121df04f-6b69-402c-837a-c0d664a819d0">
         <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']"/>
         <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="obc-model.capella#0ecb14b4-2542-47ad-b1c6-2677ab4bddce"/>
       </ownedRepresentationDescriptors>
@@ -12626,7 +12626,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@edgeMappings[name='Basic%20message%20mapping%20DF']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ApbN4FkbEe2U3J5_S6bePA" name="Timeout" sourceNode="_ud9_gFkZEe2U3J5_S6bePA" targetNode="_ApZYuFkbEe2U3J5_S6bePA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ApbN4FkbEe2U3J5_S6bePA" name="Mode change signal relay request timeout" sourceNode="_ud9_gFkZEe2U3J5_S6bePA" targetNode="_ApZYuFkbEe2U3J5_S6bePA">
       <target xmi:type="org.polarsys.capella.core.data.interaction:SequenceMessage" href="obc-model.capella#2f6a2a85-a2fc-4a01-a462-330b4f4aae6a"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:SequenceMessage" href="obc-model.capella#2f6a2a85-a2fc-4a01-a462-330b4f4aae6a"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:MessageEnd" href="obc-model.capella#667c660e-087b-4607-9f02-40dba613dd4e"/>
