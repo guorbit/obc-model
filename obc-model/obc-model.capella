@@ -2465,8 +2465,6 @@
                     sourceElement="#514d5de2-0fbd-47c7-bd2c-22097f872ce8"/>
               </inputs>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="48ce7c51-71c8-433a-87f0-5c8fce334f46" name="FOP 3"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="7e623fbd-c9d8-49ef-954d-205ecfaa2a96" name="FOP 4"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="230b0d4e-2b2d-4743-8039-4a389a33c634" name="FOP 1">
@@ -2489,7 +2487,7 @@
                 sourceElement="#d3a49d3e-7a94-4882-9eeb-a05f63ce3781"/>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
                 id="587922c1-f844-4403-87ca-956c726d5b6b" name="Mode change packet bundle dump"
-                target="#d3cdd3fa-a310-45de-a89a-ea06388931ca" source="#48ce7c51-71c8-433a-87f0-5c8fce334f46"/>
+                target="#d3cdd3fa-a310-45de-a89a-ea06388931ca" source="#f7807bcb-2b6f-4dba-8536-fd3db0e440cb"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="e945ba50-d241-489e-9619-640952039599" name="Issue mode change telecommand">
@@ -2952,13 +2950,6 @@
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="57b538be-7d8d-47b8-a1dc-b729b677157b" targetElement="#2113c396-e700-49a6-b91c-aba7629e12c6"
                 sourceElement="#36e567a3-a7b7-4c8a-9fec-bfad27d1a394"/>
-          </ownedFunctionalExchanges>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="033544a9-413c-425c-bb6b-81e064102f39" name="Mode change packet bundle dump"
-              target="#7d3ba1f9-ec74-4656-b329-b94e33be6819" source="#f7807bcb-2b6f-4dba-8536-fd3db0e440cb">
-            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
-                id="38d0c99b-abac-4575-b725-a6d8eabb7d45" targetElement="#a7f252f1-a15d-4c2b-8b7e-81d0c076601f"
-                sourceElement="#033544a9-413c-425c-bb6b-81e064102f39"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="7adc9257-a22c-4562-b405-77cc8116519c" name="Mode change evaluation telemetry"
