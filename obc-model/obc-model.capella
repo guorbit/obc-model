@@ -2024,16 +2024,6 @@
                 id="908f467b-f1a6-4e29-8ac4-baef14c9d72d" name="CP 1"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="fdcda943-10ed-4815-baaf-a286a53e46f1" name="CP 2" requiredInterfaces="#22d395bc-1935-4c0c-ac6f-4da8151c3dd6"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="2bc0e789-65e6-486f-bacc-9425c29ec4f2" name="CP 3" requiredInterfaces="#9a6ccd4a-326b-4ec8-b63f-a08240b52129"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="1194b1f6-e688-4cc5-b73f-2c11baa9ed3f" name="CP 4" requiredInterfaces="#97743988-268e-4129-a24c-79bc0355f218"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="ce4ae632-9d5d-4481-aea0-83e87f30896c" name="CP 5" requiredInterfaces="#e404f571-9c0d-41dc-b688-da0b464a4bf5"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="2c130cf7-e2b2-43f8-9f5e-d33f0e33bc3f" name="CP 6" requiredInterfaces="#3f3d5755-dc24-4836-82f8-3db69a0680ed"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="97ebc0e7-9ad1-44d6-9b21-a2a6abc51163" name="CP 7" requiredInterfaces="#f74ce36b-f265-4756-aafd-db5049e1b2df"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4" name="On-Board Computer Subsystem">
@@ -4048,9 +4038,7 @@
               id="3b5bdfbd-af15-47aa-9620-b229660d6a67" targetElement="#6debef37-9e0b-4117-bcb3-109fbcdbce5d"
               sourceElement="#2d118a21-1152-4e8f-9f38-de8b2b5a713a"/>
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-              id="b490ab8c-adfc-497f-9136-2ff91d7c7c84" name="I2C 1" linkEnds="#6ce7c676-0bc7-454b-a415-4eca2d4f3c3e #506b5e1f-7c51-420f-86ac-51625efb83c8"/>
-          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-              id="5834667b-36f4-46b9-a69b-9369b2bb22cf" name="I2C 2" linkEnds="#e1ccde2d-409c-482c-89d9-0464e9104b07 #98bcabee-2bf4-4306-8c7c-19334a4324ce"/>
+              id="b490ab8c-adfc-497f-9136-2ff91d7c7c84" name="UART" linkEnds="#6ce7c676-0bc7-454b-a415-4eca2d4f3c3e #506b5e1f-7c51-420f-86ac-51625efb83c8"/>
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
               id="f84ab1b6-50a0-4cee-b522-cb1f1f85effd" name="Analogue Link" linkEnds="#faa424c0-a9bb-40e6-8ca3-6f2cbf3134d5 #d78ba882-fd10-412e-a4e2-3ce7ecec264d"/>
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
@@ -4189,8 +4177,6 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="506b5e1f-7c51-420f-86ac-51625efb83c8" name="PP 1"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                id="98bcabee-2bf4-4306-8c7c-19334a4324ce" name="PP 2"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="faa424c0-a9bb-40e6-8ca3-6f2cbf3134d5" name="PP 3"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="77ce9bd5-8a60-43bd-9874-b586a3c55a04" name="PP 4"/>
@@ -4209,8 +4195,6 @@
               id="ecf1437f-1102-4b15-bd2e-9a5f070b71f1" name="Comms Radio" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="6ce7c676-0bc7-454b-a415-4eca2d4f3c3e" name="PP 1"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                id="e1ccde2d-409c-482c-89d9-0464e9104b07" name="PP 2"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="82cee5d1-93c9-4ee2-9d4f-1e1182f24c2c" name="Non-Volatile memory unit"
