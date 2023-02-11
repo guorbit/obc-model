@@ -2041,6 +2041,16 @@
               name="Communications Subsystem" abstractType="#3c68b50f-6203-432e-9ffc-fc909d5f5a23"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="711ad6e5-35ca-48ae-b67d-8abd6a7dd65a"
               name="On-Board Computer Subsystem" abstractType="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="adca577a-8816-46af-87df-6d60b0b9f23c"
+              name="Electrical Power Subsystem" abstractType="#da26ab85-983d-4e4f-95c2-aaf410eae4bf"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3bb6f178-7c04-43f1-a0eb-a6898dc046d8"
+              name="Mechanical Deployment Subsystem" abstractType="#69b738e4-a202-43d4-ba62-eb83ba3dddf3"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a6d1ede4-8e7e-458d-9e39-e3a6ab72f1d0"
+              name="Payload Subsystem" abstractType="#e02b365e-f103-4cfe-a027-ec2e49577f6b"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1bde7aca-8b16-47ae-b656-5d2bc3cc1a33"
+              name="Software Pipeline Subsystem" abstractType="#55dc7efe-9e48-46ee-80fc-a71951132378"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="741db4b3-6a03-423a-ab40-374c99572ca2"
+              name="Attitude Determination and Control Subsystem" abstractType="#9e8e8ded-5522-4987-9a4f-6db46f6fc163"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="4a68fb7c-72c1-4ae5-a938-3e3337e67708" targetElement="#8f68ec0b-d37c-4dfd-9b29-518cf20c5078"
               sourceElement="#6debef37-9e0b-4117-bcb3-109fbcdbce5d"/>
@@ -2067,6 +2077,54 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="00f24c6b-cea8-41b6-b93d-af4274eb7d09" targetElement="#2cbccc04-0773-439e-bf10-74b3c4f97740"
                 sourceElement="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="332c971a-80f7-4af4-ba02-9932c908de82" targetElement="#f02914d0-becb-4e03-be00-273d14f69c66"
+                sourceElement="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="da26ab85-983d-4e4f-95c2-aaf410eae4bf" name="Electrical Power Subsystem">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="72e4e6cd-22fd-415a-bd80-5a035fd016b2" targetElement="#a5d0ef86-d7fe-4c95-b743-bc8290b2bbc8"
+                sourceElement="#da26ab85-983d-4e4f-95c2-aaf410eae4bf"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="f630b8f4-a5e1-4f54-95d5-244f41889d82" targetElement="#71c18abf-c54e-4d95-b46b-f488fd445a00"
+                sourceElement="#da26ab85-983d-4e4f-95c2-aaf410eae4bf"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="69b738e4-a202-43d4-ba62-eb83ba3dddf3" name="Mechanical Deployment Subsystem">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="1523ea37-9d7e-4036-9239-34ac54aaad12" targetElement="#ad091cfa-71e8-463f-a457-cf3efd79aafb"
+                sourceElement="#69b738e4-a202-43d4-ba62-eb83ba3dddf3"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="542d7e17-5720-4d23-ae72-a6f6ca8b2dbc" targetElement="#accf0b17-cb6b-43dd-abb5-b9e375d97a15"
+                sourceElement="#69b738e4-a202-43d4-ba62-eb83ba3dddf3"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="9e6c6e01-ed9d-4f48-b418-d69273ee306d" targetElement="#f846d29d-0649-41f2-98fe-63a0e9aa056c"
+                sourceElement="#69b738e4-a202-43d4-ba62-eb83ba3dddf3"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="e02b365e-f103-4cfe-a027-ec2e49577f6b" name="Payload Subsystem">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="f784fac4-93db-41da-aa70-0cc77cdcb739" targetElement="#c466d401-3919-4993-b97d-3cef4bbddca3"
+                sourceElement="#e02b365e-f103-4cfe-a027-ec2e49577f6b"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="55dc7efe-9e48-46ee-80fc-a71951132378" name="Software Pipeline Subsystem">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="fc805549-8c7f-4916-bf0d-2f02e95b3fa9" targetElement="#fb00ed6f-46ae-4395-a020-d46f40c04630"
+                sourceElement="#55dc7efe-9e48-46ee-80fc-a71951132378"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="513ff606-ec2b-49dd-8e22-7b66e2ffc8e7" targetElement="#3974689d-c588-4e7e-973c-e1facdd3d713"
+                sourceElement="#55dc7efe-9e48-46ee-80fc-a71951132378"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="9e8e8ded-5522-4987-9a4f-6db46f6fc163" name="Attitude Determination and Control Subsystem">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="f0e3fbb8-8b92-4c41-a1c3-0ea1888dbf32" targetElement="#bd4faeea-222a-42e3-be59-1a7e2cc6bd53"
+                sourceElement="#9e8e8ded-5522-4987-9a4f-6db46f6fc163"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="4be80f79-b3aa-4130-b076-85b2d5505504" targetElement="#ddb367a0-f7d8-4c58-99f2-6b2772351a14"
+                sourceElement="#9e8e8ded-5522-4987-9a4f-6db46f6fc163"/>
           </ownedLogicalComponents>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
