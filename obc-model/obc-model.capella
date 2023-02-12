@@ -2959,7 +2959,7 @@
                       sourceElement="#53f0c52d-c21f-445c-8434-19df0a849f58"/>
                 </ownedTransitions>
                 <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                    id="ed672954-3d68-4cb8-a597-6e6fb918590c" name="Sensing Loop Exit"
+                    id="ed672954-3d68-4cb8-a597-6e6fb918590c" name="Sensing Loop Free Exit"
                     triggerDescription="proc. done" source="#e7c2869e-66e1-489c-975b-880c4947960d"
                     target="#254627dc-35b9-441e-b445-e20c9e158097">
                   <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
@@ -2967,7 +2967,7 @@
                       sourceElement="#ed672954-3d68-4cb8-a597-6e6fb918590c"/>
                 </ownedTransitions>
                 <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                    id="ed8085c0-7461-478b-a65c-4432a8da032e" name="Sensing Loop Exit"
+                    id="ed8085c0-7461-478b-a65c-4432a8da032e" name="Sensing Loop Throttled Exit"
                     triggerDescription="proc. done" source="#dd4cdbf8-6404-4fd3-ac22-5564de02beda"
                     target="#254627dc-35b9-441e-b445-e20c9e158097"/>
                 <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
