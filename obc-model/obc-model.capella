@@ -795,13 +795,6 @@
                   id="fd40049c-fd20-4453-8c39-9d229119c798" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
                   source="#6ac19e70-c68b-491f-ac77-67c178b91d6b" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
             </ownedRequirements>
-            <ownedRequirements xsi:type="Requirements:Requirement" id="99c81102-ce6d-457a-8bdb-781a9006ede6"
-                ReqIFIdentifier="A01-OBC-MOD-F-016" ReqIFName="OBCRequirement018"
-                ReqIFText="The OBC shall compare the spacecraft location with the configured Areas of Interest to determine entry into an Area of Interest.">
-              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
-                  id="3609c470-58c2-402e-b575-760580aa95ab" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
-                  source="#99c81102-ce6d-457a-8bdb-781a9006ede6" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
-            </ownedRequirements>
             <ownedRequirements xsi:type="Requirements:Requirement" id="9ec478c6-c3af-4a04-a6b8-0c81e1ba0a16"
                 ReqIFIdentifier="A01-OBC-MOD-F-015" ReqIFName="OBCRequirement016"
                 ReqIFText="The OBC shall regularly poll the Control Subsystem for the spacecraft location over the Earth.">
@@ -1072,6 +1065,13 @@
               <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
                   id="d47dedd5-a596-45ec-ba01-3852622117ba" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
                   source="#41205d51-e3eb-4940-b09c-abcbe8d9f04c" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="99c81102-ce6d-457a-8bdb-781a9006ede6"
+                ReqIFIdentifier="A01-OBC-MOD-F-016" ReqIFName="OBCRequirement018"
+                ReqIFText="The OBC shall compare the spacecraft location with the configured Areas of Interest to determine entry into an Area of Interest.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="3609c470-58c2-402e-b575-760580aa95ab" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#99c81102-ce6d-457a-8bdb-781a9006ede6" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
             </ownedRequirements>
           </ownedRequirements>
           <ownedRequirements xsi:type="Requirements:Folder" id="6acfebbf-f342-4ff6-aecb-35a2530f5d3a"
