@@ -2,7 +2,8 @@
 
 <!--Capella_Version_6.0.0-->
 <org.polarsys.capella.core.data.capellamodeller:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/6.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CapellaRequirements="http://www.polarsys.org/capella/requirements"
+    xmlns:Requirements="http://www.polarsys.org/kitalpha/requirements" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/6.0.0"
     xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/6.0.0"
     xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/6.0.0"
     xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/6.0.0"
@@ -41,6 +42,10 @@
       id="dad23c8b-f328-4ffc-b0b5-eaef7bb6b189" name="obc-model">
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
         id="bded3fa2-7271-4304-9ed0-9954b79d3e56" name="System Analysis">
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaModule" id="14be7cf0-a9a4-45a9-8c59-3a232b9f7e51">
+        <ownedRequirements xsi:type="Requirements:Requirement" id="c95d57eb-de8e-4519-8d82-2f9c36e324b7"
+            ReqIFName="SystemRequirement1"/>
+      </ownedExtensions>
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
           id="5a85247a-ac50-45ce-8283-9063c53854eb" name="System Functions">
         <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
@@ -727,6 +732,461 @@
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.la:LogicalArchitecture"
         id="e430c9eb-8b42-4612-8921-b4d4ac4fe938" name="Logical Architecture">
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaModule" id="1272d59f-3a07-4a23-8841-c7c8af534822">
+        <ownedAttributes xsi:type="Requirements:BooleanValueAttribute" id="4f5ec8b4-7a94-4e9d-918e-67e5e250ad3f"/>
+        <ownedAttributes xsi:type="Requirements:StringValueAttribute" id="f9587bb8-9603-4476-ae9b-a5c8ed2fbd20"/>
+        <ownedRequirements xsi:type="Requirements:Folder" id="32945021-76ac-43b5-861b-fecd5db12787"
+            ReqIFName="OBC Requirements">
+          <ownedRequirements xsi:type="Requirements:Folder" id="47038e2c-9cac-4acf-a435-a55295a18f2b"
+              ReqIFName="01 Mode Handling">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="f403e279-172c-465f-a32c-4b09e069731d"
+                ReqIFIdentifier="A01-OBC-MOD-F-005" ReqIFName="OBCRequirement005"
+                ReqIFText="Prior to inititialisation, the OBC shall regularly poll the Control Subsystem for detection of tumbling attitude.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="568b9391-e71f-4e9b-ad57-047bcc817d51" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#f403e279-172c-465f-a32c-4b09e069731d" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="1b586f7a-eeda-4181-a510-1da0d9ca7b75"
+                ReqIFIdentifier="A01-OBC-MOD-F-007" ReqIFName="OBCRequirement007"
+                ReqIFText="As part of the initialisation sequence, the OBC shall issue a de-tumble signal to the Control Subsystem.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="73a620f5-506d-4b4c-9f1d-01156716fe30" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#1b586f7a-eeda-4181-a510-1da0d9ca7b75" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="44c0946f-321a-4eb5-89ca-a3fae0beb84d"
+                ReqIFIdentifier="A01-OBC-MOD-F-011" ReqIFName="OBCRequirement011"
+                ReqIFText="As part of the transition to the system-wide &quot;end-of-life&quot; mode of operation, the OBC shall issue a dragsail deployment signal to the Mechanical Subsystem,">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="fa7370f3-39fb-469b-82b0-75d0a8baf97b" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#44c0946f-321a-4eb5-89ca-a3fae0beb84d" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="a87f7d51-7316-4b19-9217-2f02ce5bb9be"
+                ReqIFIdentifier="A01-OBC-MOD-P-002" ReqIFName="OBCRequirement017"
+                ReqIFText="The period between polls to the Control Subsystem for the spacecraft location shall be t (small) or lower.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="5234a712-69b4-4f67-9b77-3f29fa348d6b" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#a87f7d51-7316-4b19-9217-2f02ce5bb9be" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="87ba29f6-02f2-4c39-b10d-53b5ace39d6d"
+                ReqIFIdentifier="A01-OBC-MOD-F-003" ReqIFName="OBCRequirement003"
+                ReqIFText="The OBC shall initiate transition to the system-wide nominal mode of operation after successful completion of the initialisation sequence.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="2519b807-274c-476c-91db-a179b27de026" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#87ba29f6-02f2-4c39-b10d-53b5ace39d6d" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0d014598-9a55-42da-8bbc-9b4637a84baa"
+                ReqIFIdentifier="A01-OBC-MOD-F-008" ReqIFName="OBCRequirement008"
+                ReqIFText="As part of the initialisation sequence, the OBC shall issue a solar array deployment signal to the Mechanical Subsystem.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="1de0c494-ac49-4f1d-926e-6a787410e890" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#0d014598-9a55-42da-8bbc-9b4637a84baa" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="d6242751-face-44a1-87db-ebc43abef072"
+                ReqIFIdentifier="A01-OBC-MOD-F-013" ReqIFName="OBCRequirement014"
+                ReqIFText="The OBC shall evaluate the contents of any received transmissions to determine establishment of contact with the Ground Station.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="5e486979-d4f3-4d4c-acac-f56b05ee548c" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#d6242751-face-44a1-87db-ebc43abef072" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6ac19e70-c68b-491f-ac77-67c178b91d6b"
+                ReqIFIdentifier="A01-OBC-FLT-F-004" ReqIFName="OBCRequirement045"
+                ReqIFText="The OBC shall hard reset individual subsystems.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="fd40049c-fd20-4453-8c39-9d229119c798" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#6ac19e70-c68b-491f-ac77-67c178b91d6b" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="9ec478c6-c3af-4a04-a6b8-0c81e1ba0a16"
+                ReqIFIdentifier="A01-OBC-MOD-F-015" ReqIFName="OBCRequirement016"
+                ReqIFText="The OBC shall regularly poll the Control Subsystem for the spacecraft location over the Earth.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="96d8d41c-c2c8-4564-ba8c-d168e8dd693a" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#9ec478c6-c3af-4a04-a6b8-0c81e1ba0a16" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0195edc5-31fa-43aa-8bd0-29a49cf42e63"
+                ReqIFIdentifier="A01-OBC-MOD-F-006" ReqIFName="OBCRequirement006"
+                ReqIFText="Detection of tumbling attitude shall trigger the initialisation sequence.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="eb18d36f-84bd-4b42-9e8b-392ba09d7b7c" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#0195edc5-31fa-43aa-8bd0-29a49cf42e63" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="9e5d9707-ccb8-47b8-9599-f0e5a7937ccd"
+                ReqIFIdentifier="AST-OBC-RTC-P-003" ReqIFName="OBCRequirement056"
+                ReqIFText="The spacecraft time shall not overflow over the nominal mission lifetime.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="b5765992-8e06-4d46-aa0f-f5f9c835c397" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#9e5d9707-ccb8-47b8-9599-f0e5a7937ccd" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="f674da06-9037-4473-8f97-0587d8adbc27"
+                ReqIFIdentifier="A01-OBC-MOD-F-004" ReqIFName="OBCRequirement004"
+                ReqIFText="Unsuccessful steps of the initialisation sequence shall be (automatically? manually?) triggered until successful execution.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="4aa5e9d9-e91b-47f7-a8c6-bd55d5cbe2a3" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#f674da06-9037-4473-8f97-0587d8adbc27" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="19c7617b-c5d9-4ff6-80b0-bdeb4dafbc6f"
+                ReqIFIdentifier="A01-OBC-MOD-F-009" ReqIFName="OBCRequirement009"
+                ReqIFText="As part of the initialisation sequence, the OBC shall issue an antenna deployment signal to the Mechanical Subsystem.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="e3d991e7-5aeb-45c5-98f2-b85ecb3f2bd1" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#19c7617b-c5d9-4ff6-80b0-bdeb4dafbc6f" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="e99f93dd-488c-4b0f-9b8f-a6ff59c907bf"
+                ReqIFIdentifier="A01-OBC-MOD-F-002" ReqIFName="OBCRequirement002"
+                ReqIFText="The OBC shall manage system-wide mode transition initiated by telecommand.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="ea3b24ef-c22f-4c2e-9cae-46fd20165c62" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#e99f93dd-488c-4b0f-9b8f-a6ff59c907bf" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="090bccd9-1598-4502-89fd-507023d97697"
+                ReqIFIdentifier="A01-OBC-MOD-F-014" ReqIFName="OBCRequirement015"
+                ReqIFText="Establishment of contact with the Ground Station shall trigger a system-wide mode change to a the appropriate &quot;uplink&quot; state.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="468fcbbd-996b-4a9e-85e9-9dfaae64f2c2" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#090bccd9-1598-4502-89fd-507023d97697" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6e55bef9-7e9d-466d-86f3-6ef750950007"
+                ReqIFIdentifier="A01-OBC-MOD-P-001" ReqIFName="OBCRequirement013"
+                ReqIFText="The period between polls to the Communication Subsystem for any received transmissions shall be T (large) or lower.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="f0006ab9-85a2-47b0-9a76-2c06ad05faff" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#6e55bef9-7e9d-466d-86f3-6ef750950007" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0a11edf4-c31c-4188-a5ea-fb7d18ea1fee"
+                ReqIFIdentifier="A01-OBC-MOD-F-012" ReqIFName="OBCRequirement012"
+                ReqIFText="The OBC shall regularly poll the Communication Subsystem for any received transmissions.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="6ce22b6d-1f3c-4296-9958-2b697d78b1a3" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#0a11edf4-c31c-4188-a5ea-fb7d18ea1fee" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="2f53cb49-8fd5-4a9a-941b-0648ba8421f9"
+                ReqIFIdentifier="A01-OBC-MOD-F-001" ReqIFName="OBCRequirement001"
+                ReqIFText="The OBC shall manage system-wide mode transitions automatically initiated by a trigger event.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="f0c22291-bb4d-450e-b23c-9ac5fbc714b4" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#2f53cb49-8fd5-4a9a-941b-0648ba8421f9" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="3a922b63-0fa0-4446-b372-5c6bca0a2fd6"
+                ReqIFIdentifier="A01-OBC-MOD-F-010" ReqIFName="OBCRequirement010"
+                ReqIFText="The OBC shall initiate transition to the system-wide &quot;end-of-life&quot; mode of operation upon telecommand.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="c45d3801-c086-4c18-880b-481bc70daeef" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#3a922b63-0fa0-4446-b372-5c6bca0a2fd6" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="356b45d2-2827-41d3-b7fd-0c98fda01609"
+                ReqIFIdentifier="A01-OBC-MOD-F-017" ReqIFName="OBCRequirement019"
+                ReqIFText="Entry into an Area of Interest shall trigger a system-wide mode change to the appropriate &quot;imaging&quot; state.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="a567e7ae-9425-4361-8897-99edbe35e295" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#356b45d2-2827-41d3-b7fd-0c98fda01609" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="3e930d44-736c-4939-a27b-9f37ef188236"
+              ReqIFName="02 Telecommand">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="766c1d82-8171-4bca-93f1-ef47ad3eae15"
+                ReqIFIdentifier="A01-OBC-T/C-F-001" ReqIFName="OBCRequirement020"
+                ReqIFText="The OBC shall configure a new Area of Interest upon receiving the appropriate telecommand.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="0cc8f7ac-3f31-4cc6-a47b-3d9399de6f35" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#766c1d82-8171-4bca-93f1-ef47ad3eae15" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="ee5a083f-7632-4259-bf7c-6ccdfb6e0974"
+                ReqIFIdentifier="A01-OBC-T/C-F-003" ReqIFName="OBCRequirement022"
+                ReqIFText="The OBC shall retrieve the values of any configurable parameter upon receiving the appropriate telecommand.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="2a724047-3eee-4e12-a8b9-8a9727cdea71" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#ee5a083f-7632-4259-bf7c-6ccdfb6e0974" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="c94ea195-231e-4822-b725-d757d9f3acab"
+                ReqIFIdentifier="A01-OBC-T/C-F-002" ReqIFName="OBCRequirement021"
+                ReqIFText="The OBC shall remove a configured Area of Interest upon receiving the appropriate telecommand.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="b2875397-da16-4ed8-8908-b660879afc37" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#c94ea195-231e-4822-b725-d757d9f3acab" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="aa711cd5-6199-4f50-8e21-f1930027b112"
+                ReqIFIdentifier="A01-OBC-T/C-F-004" ReqIFName="OBCRequirement023"
+                ReqIFText="The OBC shall overwrite the value of any configurable parameter upon receiving the appropriate telecommand.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="b943132f-f041-4fcd-9c45-0e1cf42c66f4" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#aa711cd5-6199-4f50-8e21-f1930027b112" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="f61802c7-676a-4ef4-847c-c06626c199ce"
+              ReqIFName="03 Telemetry">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="94c3db1d-2914-4aba-8f60-9c300516fe62"
+                ReqIFIdentifier="A01-OBC-T/M-F-008" ReqIFName="OBCRequirement035"
+                ReqIFText="The OBC shall generate an &quot;event-tier&quot; subsystem status data point at the time of each trigger event.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="e21b7f4d-419d-4fed-bda9-f3d00cedc65c" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#94c3db1d-2914-4aba-8f60-9c300516fe62" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="579b7343-9f30-4b58-a291-9e94595d3d29"
+                ReqIFIdentifier="A01-OBC-T/M-F-006" ReqIFName="OBCRequirement032"
+                ReqIFText="The OBC should generate &quot;housekeeping-tier&quot; subsystem status data points outside of Ground Station coverage.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="28b749df-86ba-4961-87e3-c73d8bdd8bd6" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#579b7343-9f30-4b58-a291-9e94595d3d29" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="86f68ad8-1a92-4b1f-9e22-730749eaa8db"
+                ReqIFIdentifier="A01-OBC-T/M-F-003" ReqIFName="OBCRequirement027"
+                ReqIFText="Subsystem health metrics shall include the rolling average time between heartbeat signals over a period of parametrised length.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="e3c0b374-73d2-40b0-99f1-cf7aa343890c" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#86f68ad8-1a92-4b1f-9e22-730749eaa8db" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="ba6c2e9a-ab61-4631-8731-b0a10052b7db"
+                ReqIFIdentifier="A01-OBC-T/M-P-002" ReqIFName="OBCRequirement033"
+                ReqIFText="The period of generation of &quot;housekeeping-tier&quot; subsystem status data points outside of Ground Station coverage should be T (large) or lower.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="906c724e-734f-442d-bfc1-59b0c4f5e3b7" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#ba6c2e9a-ab61-4631-8731-b0a10052b7db" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="d84eb822-2ff6-4cb6-9bb8-74a1e590b163"
+                ReqIFIdentifier="A01-OBC-T/M-F-001" ReqIFName="OBCRequirement025"
+                ReqIFText="The OBC shall transmit health metrics for each subsystem as telemetry.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="b28057ac-e26e-453d-b287-32b3594b6b6f" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#d84eb822-2ff6-4cb6-9bb8-74a1e590b163" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6ee8adad-94d2-49be-98c9-7b947f1df4f9"
+                ReqIFIdentifier="A01-OBC-T/M-P-001" ReqIFName="OBCRequirement031"
+                ReqIFText="The period of generation of &quot;housekeeping-tier&quot; subsystem status data points during Ground Station coverage shall be t (small) or lower.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="300a141e-7b65-4662-ac5e-1cdb6b914923" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#6ee8adad-94d2-49be-98c9-7b947f1df4f9" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="0bf424d0-81ed-4cc2-88af-d98d2758de88"
+                ReqIFIdentifier="A01-OBC-T/M-F-004" ReqIFName="OBCRequirement029"
+                ReqIFText="The OBC shall transmit status data for each subsystem as telemetry.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="275de63a-1d86-4bbd-b983-15d9806c5afc" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#0bf424d0-81ed-4cc2-88af-d98d2758de88" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="bc1407d0-a231-4961-bac9-05cefecc129c"
+                ReqIFIdentifier="A01-OBC-T/M-F-002" ReqIFName="OBCRequirement026"
+                ReqIFText="Subsystem health metrics shall include the timestamp of the latest heartbeat signal received.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="9600ce19-f2a1-48eb-9a76-794d6e029076" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#bc1407d0-a231-4961-bac9-05cefecc129c" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="a733ae67-9c36-40a7-a26e-4bfa5e65ed58"
+                ReqIFIdentifier="A01-OBC-T/M-F-005" ReqIFName="OBCRequirement030"
+                ReqIFText="The OBC shall regularly generate &quot;housekeeping-tier&quot; subsystem status data points during Ground Station coverage.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="9a71dd6f-6e74-479f-8ba3-b6b077db6ad1" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#a733ae67-9c36-40a7-a26e-4bfa5e65ed58" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="44fbab2b-20ab-4f82-a794-ec47250ed794"
+                ReqIFIdentifier="A01-OBC-T/M-F-007" ReqIFName="OBCRequirement034"
+                ReqIFText="The OBC shall generate a &quot;warning-tier&quot; subsystem status data point whenever a parameter is measured outside its nominal range.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="302c36ed-6ea5-4429-8c51-263b58776b48" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#44fbab2b-20ab-4f82-a794-ec47250ed794" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="4ba4ebdd-a20a-4ed8-addc-f01bf9157ea5"
+              ReqIFName="05 FDIR">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="8c108798-76c8-435c-afad-0793b72fff96"
+                ReqIFIdentifier="A01-OBC-FLT-F-002" ReqIFName="OBCRequirement028"
+                ReqIFText="The OBC shall monitor the status of each subsystem through regular data collection.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="9400b667-ed03-4862-a783-2c77d081cd1c" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#8c108798-76c8-435c-afad-0793b72fff96" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="1718b67f-2138-442b-ace9-177a31700b5e"
+                ReqIFIdentifier="A01-OBC-FLT-F-001" ReqIFName="OBCRequirement024"
+                ReqIFText="The OBC shall monitor the health of each subsystem through regular heartbeat signals.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="fe0c785a-77aa-43a4-a0be-5239a43d0d23" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#1718b67f-2138-442b-ace9-177a31700b5e" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="4036e092-8893-4b2c-9fb5-fc549e2602e7"
+                ReqIFIdentifier="A01-OBC-FLT-F-008" ReqIFName="OBCRequirement049"
+                ReqIFText="The OBC shall detect pre-boot (binary corruption) or boot-time (software hanging) failure of reprogrammed hardware nodes.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="0c911a52-8c80-414a-998d-7bbc65318e8a" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#4036e092-8893-4b2c-9fb5-fc549e2602e7" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="aa2cc6d9-116f-4e81-81c4-8c3998070a3a"
+                ReqIFIdentifier="A01-OBC-FLT-F-003" ReqIFName="OBCRequirement044"
+                ReqIFText="The OBC shall power cycle individual subsystems.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="3e8d34dd-8a89-4cfa-8fe3-3424eeed2b70" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#aa2cc6d9-116f-4e81-81c4-8c3998070a3a" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="378257e7-79f1-4656-83f3-60004d343aa6"
+                ReqIFIdentifier="A01-OBC-FLT-F-006" ReqIFName="OBCRequirement047"
+                ReqIFText="The OBC shall store a copy of the last known-working version of the binary software for each hardware node.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="37e4eedf-1372-46a0-b22c-5bc54976186a" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#378257e7-79f1-4656-83f3-60004d343aa6" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="2343230d-370a-4d5d-92b7-f6571943cb0d"
+                ReqIFIdentifier="A01-OBC-FLT-F-005" ReqIFName="OBCRequirement046"
+                ReqIFText="The OBC should soft reset individual subsystems that support this operation.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="d1805e2b-ddf3-466f-b428-1eee9ab1e956" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#2343230d-370a-4d5d-92b7-f6571943cb0d" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="f32cfc0f-a63c-4083-8f49-b5028e61d7d9"
+                ReqIFIdentifier="A01-OBC-FLT-F-007" ReqIFName="OBCRequirement048"
+                ReqIFText="The OBC shall reprogram any hardware node upon receiving the appropriate telecommand.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="26b56f8a-2460-40e0-9ca4-2b428f53a740" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#f32cfc0f-a63c-4083-8f49-b5028e61d7d9" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="dc7150cd-2bf3-409d-aaa8-31209b2fd28c"
+                ReqIFIdentifier="A01-OBC-FLT-F-009" ReqIFName="OBCRequirement050"
+                ReqIFText="The OBC shall roll-back reprogrammed hardware nodes experiencing failure to the last known-working version of their binary software.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="7722281c-0373-4a47-a7dd-b82c3332bd85" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#dc7150cd-2bf3-409d-aaa8-31209b2fd28c" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="6adb3467-b18c-4deb-b186-92d5b7da9cfb"
+              ReqIFName="99 Miscellaneous">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="6aaa985e-dc16-4f71-8192-9339ebb31eef"
+                ReqIFIdentifier="A01-OBC-MSC-P-001" ReqIFName="OBCRequirement058"
+                ReqIFText="The OBC's CPU load arising from its periodic routines shall be 80% or lower.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="d72bb1c9-863e-4787-90a4-ae22e6d09bb1" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#6aaa985e-dc16-4f71-8192-9339ebb31eef" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="cf1152e0-84a3-4ca6-b07d-0dee82370f65"
+                ReqIFIdentifier="A01-OBC-MSC-P-003" ReqIFName="OBCRequirement060"
+                ReqIFText="The OBC's MTTF (Mean Time To unrecoverable Failure) shall be within x% (small) of the nominal mission lifetime.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="c365f7ea-5532-40f5-a640-03a5df28a8a6" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#cf1152e0-84a3-4ca6-b07d-0dee82370f65" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="41205d51-e3eb-4940-b09c-abcbe8d9f04c"
+                ReqIFIdentifier="A01-OBC-MSC-P-002" ReqIFName="OBCRequirement059"
+                ReqIFText="The OBC's MTBF (Mean Time Between recoverable Failures) shall be within X% (large) of the nominal mission lifetime.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="d47dedd5-a596-45ec-ba01-3852622117ba" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#41205d51-e3eb-4940-b09c-abcbe8d9f04c" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="99c81102-ce6d-457a-8bdb-781a9006ede6"
+                ReqIFIdentifier="A01-OBC-MOD-F-016" ReqIFName="OBCRequirement018"
+                ReqIFText="The OBC shall compare the spacecraft location with the configured Areas of Interest to determine entry into an Area of Interest.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="3609c470-58c2-402e-b575-760580aa95ab" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#99c81102-ce6d-457a-8bdb-781a9006ede6" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="6acfebbf-f342-4ff6-aecb-35a2530f5d3a"
+              ReqIFName="04 Memory">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="e172ad81-0854-49b8-81a9-0ac23a4b40cc"
+                ReqIFIdentifier="A01-OBC-MEM-F-005" ReqIFName="OBCRequirement041"
+                ReqIFText="The OBC should store in non-volatile memory a copy of every assignment and instruction loaded in volatile memory.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="bc1ce527-6902-47d1-80f2-50a54a077fbc" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#e172ad81-0854-49b8-81a9-0ac23a4b40cc" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="c38c5e65-cbf8-4757-902e-fd8e5a9e7d7a"
+                ReqIFIdentifier="A01-OBC-MEM-F-007" ReqIFName="OBCRequirement043"
+                ReqIFText="The OBC should overwrite any corrupted assignment or instruction with its copy stored in non-volatile memory.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="68aa854a-d956-4c65-9ac7-0b31972da3d1" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#c38c5e65-cbf8-4757-902e-fd8e5a9e7d7a" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="2e056538-59b1-4430-acbd-d99cfa132339"
+                ReqIFIdentifier="A01-OBC-MEM-P-001" ReqIFName="OBCRequirement037"
+                ReqIFText="The retention time for generated subsystem status data shall be 2 or more times the longest non-coverage period in the mission definition.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="fd75da44-ce5b-4436-841b-4dc41768e87c" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#2e056538-59b1-4430-acbd-d99cfa132339" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="c2c61ae0-540b-47f3-b369-e1583652d7ea"
+                ReqIFIdentifier="A01-OBC-MEM-F-002" ReqIFName="OBCRequirement038"
+                ReqIFText="The OBC non-volatile memory shall provide EDAC (Error Detection And Correction) logic.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="68b1d740-b1f1-4692-b427-7f6e2296406a" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#c2c61ae0-540b-47f3-b369-e1583652d7ea" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="99aaaa4c-e7ec-4778-a91d-20a9e0c23a0d"
+                ReqIFIdentifier="A01-OBC-MEM-F-001" ReqIFName="OBCRequirement036"
+                ReqIFText="The OBC shall store all generated subsystem status data in non-volatile memory.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="a4b2f410-2fad-4166-9fbb-7fdccdf7f0e4" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#99aaaa4c-e7ec-4778-a91d-20a9e0c23a0d" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="12dfc155-364a-466b-acfb-1094b86ba877"
+                ReqIFIdentifier="A01-OBC-MEM-F-006" ReqIFName="OBCRequirement042"
+                ReqIFText="The OBC should regularly compare all assignments and instructions in volatile memory against their respective copies stored in non-volatile memory to identify corruption.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="c469a758-3009-41c2-8411-fb0659c2e988" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#12dfc155-364a-466b-acfb-1094b86ba877" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="ae0c5b82-5c3c-4e9a-8154-f3e431e7723c"
+                ReqIFIdentifier="A01-OBC-MEM-F-004" ReqIFName="OBCRequirement040"
+                ReqIFText="The OBC should overwrite any corrupted item in an individual non-volatile memory unit with the consensus from the EDAC logic.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="5724cbfe-55ec-48b2-bdf0-7ab6585e9da9" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#ae0c5b82-5c3c-4e9a-8154-f3e431e7723c" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="de43f66f-0d31-4cbc-8a10-b83cf7ac6f05"
+                ReqIFIdentifier="A01-OBC-MEM-F-003" ReqIFName="OBCRequirement039"
+                ReqIFText="The OBC should regularly compare all items stored in each individual non-volatile memory unit against the consensus from the EDAC logic to identify corruption.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="86618ac2-8146-48ca-a821-ee5859ece608" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#de43f66f-0d31-4cbc-8a10-b83cf7ac6f05" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="d977f745-cadf-47ec-a221-bd74bbcc2bce"
+              ReqIFName="06 Time-Keeping">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="043e0d38-56c0-4123-99fb-f413fa5924ef"
+                ReqIFIdentifier="A01-OBC-RTC-F-001" ReqIFName="OBCRequirement053"
+                ReqIFText="The OBC shall keep the spacecraft time.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="0912f429-058a-403e-b592-95dc14101757" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#043e0d38-56c0-4123-99fb-f413fa5924ef" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="af9fef6b-d675-46cc-a73d-b702d5e8758f"
+                ReqIFIdentifier="A01-OBC-RTC-F-002" ReqIFName="OBCRequirement057"
+                ReqIFText="The OBC shall adjust the spacecraft time through regular synchronisation exchanges with the Ground Station.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="22226947-7a01-4d46-bc39-27c61a37facc" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#af9fef6b-d675-46cc-a73d-b702d5e8758f" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="08e4102f-f95d-4501-993e-4c77cb2baeab"
+                ReqIFIdentifier="A01-OBC-RTC-P-002" ReqIFName="OBCRequirement055"
+                ReqIFText="The cumulative drift of the spacecraft time shall be 100ppm or lower over the nominal mission lifetime.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="68f8f7eb-c444-4bd2-a98e-f25505e16f31" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#08e4102f-f95d-4501-993e-4c77cb2baeab" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="afcc86cd-c78c-4417-9823-49735b9c5958"
+                ReqIFIdentifier="A01-OBC-RTC-P-001" ReqIFName="OBCRequirement054"
+                ReqIFText="The instantaneous error of the spacecraft time shall be 100ms or lower at all times.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="e6feeeb6-897c-44a8-89fa-751031585f6c" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#afcc86cd-c78c-4417-9823-49735b9c5958" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+          </ownedRequirements>
+          <ownedRequirements xsi:type="Requirements:Folder" id="d7c65d8b-b0f2-4dab-a8aa-09cab36adc91"
+              ReqIFName="07 Security">
+            <ownedRequirements xsi:type="Requirements:Requirement" id="2e5e46b1-9918-4301-85ff-e3a30f26c3ba"
+                ReqIFIdentifier="A01-OBC-SEC-F-001" ReqIFName="OBCRequirement051"
+                ReqIFText="The OBC shall check the integrity of all transmitted telecommand packets through a digital signature.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="f79f5e13-5aaa-47ce-bd22-28a43fc640d5" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#2e5e46b1-9918-4301-85ff-e3a30f26c3ba" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="4a8db81c-0e81-478e-9a66-59f8b6b9f543"
+                ReqIFIdentifier="A01-OBC-SEC-F-002" ReqIFName="OBCRequirement052"
+                ReqIFText="The OBC shall include an identifier indicating the originating spacecraft to all transmitted payload and telemetry packets.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="77c59ba4-59f4-4dcd-a502-c47b5eabab6e" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#4a8db81c-0e81-478e-9a66-59f8b6b9f543" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+          </ownedRequirements>
+        </ownedRequirements>
+      </ownedExtensions>
+      <ownedExtensions xsi:type="CapellaRequirements:CapellaTypesFolder" id="552af31a-8e59-450c-8818-944d2ce5e89f">
+        <ownedTypes xsi:type="Requirements:RelationType" id="1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+            ReqIFLongName="is allocated to"/>
+      </ownedExtensions>
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
           id="ef4b367f-c99a-408f-bc8e-4b7400293d07" name="Logical Functions">
         <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
