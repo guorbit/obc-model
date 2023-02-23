@@ -2023,19 +2023,19 @@
                       triggerDescription="" source="#743fd61f-065b-4443-9f53-1e3b82eb9a84"
                       target="#0d701df2-5706-4700-920e-bd6280549800" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="c59c53bb-8992-4fb6-9bab-326a42bf2be4" name="Immediate Mission Idling from SSL1 Stage 1"
+                      id="c59c53bb-8992-4fb6-9bab-326a42bf2be4" name="Immediate Mission Idling from SSL1 Stage 2"
                       triggerDescription="" source="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b"
                       target="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="177a3ed3-51e7-4b3b-814c-733419f93b65" name="Immediate Mission Processing from SSL1 Stage 1"
+                      id="177a3ed3-51e7-4b3b-814c-733419f93b65" name="Immediate Mission Processing from SSL1 Stage 2"
                       triggerDescription="" source="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b"
                       target="#0d701df2-5706-4700-920e-bd6280549800" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="0586a3a9-1e2e-4e6a-bed1-73fbe037f8dc" name="Immediate Mission Idling from SSL1 Stage 2"
+                      id="0586a3a9-1e2e-4e6a-bed1-73fbe037f8dc" name="Immediate Mission Idling from SSL1 Stage 3"
                       triggerDescription="" source="#e8390dae-5fbe-43e3-915e-84066cfb5e98"
                       target="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="e47b5b55-7ede-4259-8d0e-ed5c3c4804ef" name="Immediate Mission Imaging from SSL1 Stage 2"
+                      id="e47b5b55-7ede-4259-8d0e-ed5c3c4804ef" name="Immediate Mission Imaging from SSL1 Stage 3"
                       triggerDescription="" source="#e8390dae-5fbe-43e3-915e-84066cfb5e98"
                       target="#e5a93f83-cd83-4e2b-8987-06b0e81389ab" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
                 </ownedRegions>
