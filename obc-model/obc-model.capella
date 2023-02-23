@@ -615,14 +615,17 @@
                 kind="ASYNCHRONOUS_CALL" sendingEnd="#294a5a25-304f-4ce0-ade6-d9584d4ec3b9"
                 receivingEnd="#b35373f2-125a-43af-b094-b75342282923"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="b7ab884a-f358-4f04-b593-2f5f93d429a2" name="Issue mode change telecommand"
-                coveredInstanceRoles="#a52678a4-607f-4306-adaa-b07f377394e6" relatedAbstractFunction="#8129fcd9-dec9-4915-a7fd-7da096567616"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="cd2dff59-e78e-4409-b827-1efacdd94c1a" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
                 relatedAbstractState="#743fd61f-065b-4443-9f53-1e3b82eb9a84"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="b7ab884a-f358-4f04-b593-2f5f93d429a2" name="Issue mode change telecommand"
+                coveredInstanceRoles="#a52678a4-607f-4306-adaa-b07f377394e6" relatedAbstractFunction="#8129fcd9-dec9-4915-a7fd-7da096567616"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="9bbcc579-623d-47e8-b29e-fdf0bfdfe729" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
                 relatedAbstractState="#743fd61f-065b-4443-9f53-1e3b82eb9a84"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="4daf027f-143a-4143-b973-22b265c4dbed" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="2ffc13a1-c169-4eda-b8d6-1a2f07bf87f0" name="Issue mode change telecommand"
                 coveredInstanceRoles="#a52678a4-607f-4306-adaa-b07f377394e6" relatedAbstractFunction="#8129fcd9-dec9-4915-a7fd-7da096567616"/>
@@ -633,8 +636,17 @@
                 id="f1ecf15b-a7a3-4412-8233-1deb52a6aac3" name="Receive Call Message Call"
                 coveredInstanceRoles="#b567322b-fa9f-4bc3-bf60-38e36a21548a" event="#c8b5088a-4aa5-4c3b-bdbc-b8b29f149d83"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="35dbf507-8def-491c-9596-cc2f8a9234ca" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="64374a7f-51b4-49c8-81d1-3e5d595440e3" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#e8390dae-5fbe-43e3-915e-84066cfb5e98"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="fb5dc05d-0d9a-43d1-98d0-2d3b78961e21" name="Send mode change telecommand"
                 coveredInstanceRoles="#b567322b-fa9f-4bc3-bf60-38e36a21548a" relatedAbstractFunction="#01db86c6-5399-42d2-a5bc-0ccf1ae3ab5f"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="162732e4-6a67-4806-b47b-3639d37cbbe9" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#e8390dae-5fbe-43e3-915e-84066cfb5e98"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="5b2396e0-2d10-40e6-900a-6238f1e1dca2" name="Send mode change telecommand"
                 coveredInstanceRoles="#b567322b-fa9f-4bc3-bf60-38e36a21548a" relatedAbstractFunction="#01db86c6-5399-42d2-a5bc-0ccf1ae3ab5f"/>
@@ -686,6 +698,24 @@
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
                 id="bdd5c542-a171-478e-843e-804ee6bdcb3b" name="endExec" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
                 event="#6c276f4c-b81c-458a-9e0c-0ce34a1b4992"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="046098cb-ffbc-4e69-9bbe-e01e0fdf8208" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="f8876886-4e38-493d-89d5-15f1cb18b3c3" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="fef966c4-fe14-480e-930b-1428c3a53fb1" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#e5a93f83-cd83-4e2b-8987-06b0e81389ab"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="5b28f700-7523-4c66-a577-98924e0a473e" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#e5a93f83-cd83-4e2b-8987-06b0e81389ab"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="83fd3956-7565-4418-9584-ea5718e9cdee" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#0d701df2-5706-4700-920e-bd6280549800"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="61c39b00-89f6-467a-883f-ec57c410886b" coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434"
+                relatedAbstractState="#0d701df2-5706-4700-920e-bd6280549800"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
                 id="74754c1d-d1c5-4c37-bda9-4d104367ab38" name="Send Call Message Call"
                 coveredInstanceRoles="#0bc30a5b-d89f-4dcb-923b-1f3b5143d434" event="#ed369487-52ae-4652-b05d-4d962a288899"/>
@@ -779,6 +809,21 @@
             <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
                 id="91b5cf18-7579-422d-bc97-5b3a5fe8da42" start="#cd2dff59-e78e-4409-b827-1efacdd94c1a"
                 finish="#9bbcc579-623d-47e8-b29e-fdf0bfdfe729" relatedAbstractState="#743fd61f-065b-4443-9f53-1e3b82eb9a84"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
+                id="343b8c3d-566c-4a00-93c7-c447fee11a7e" start="#046098cb-ffbc-4e69-9bbe-e01e0fdf8208"
+                finish="#f8876886-4e38-493d-89d5-15f1cb18b3c3" relatedAbstractState="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
+                id="2cc77d6a-0074-45a6-92ba-4489f42522a9" start="#4daf027f-143a-4143-b973-22b265c4dbed"
+                finish="#35dbf507-8def-491c-9596-cc2f8a9234ca" relatedAbstractState="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
+                id="b6085bce-056f-4df1-bc6e-2049824301c2" start="#64374a7f-51b4-49c8-81d1-3e5d595440e3"
+                finish="#162732e4-6a67-4806-b47b-3639d37cbbe9" relatedAbstractState="#e8390dae-5fbe-43e3-915e-84066cfb5e98"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
+                id="38b3b652-eccd-4d80-899d-556c1befae1a" start="#fef966c4-fe14-480e-930b-1428c3a53fb1"
+                finish="#5b28f700-7523-4c66-a577-98924e0a473e" relatedAbstractState="#e5a93f83-cd83-4e2b-8987-06b0e81389ab"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
+                id="5caeda4c-42de-4d63-9f64-06af9651a0d2" start="#83fd3956-7565-4418-9584-ea5718e9cdee"
+                finish="#61c39b00-89f6-467a-883f-ec57c410886b" relatedAbstractState="#0d701df2-5706-4700-920e-bd6280549800"/>
             <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:EventSentOperation"
                 id="5a821be5-e50a-476c-984e-89210580d316" operation="#0defb956-95fa-404f-ba61-18961c961d6a"/>
             <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:EventReceiptOperation"
@@ -1896,7 +1941,7 @@
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                       id="05c16639-d96b-45f5-894b-04fec18e6a8a" name="Primary Link Loop Progress"
                       triggerDescription="EoT-U packet" source="#743fd61f-065b-4443-9f53-1e3b82eb9a84"
-                      target="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0 #984e2ffb-a447-4efb-a529-fbf0af004e50 #941ae029-67e3-4f54-95da-87e1396054f2"/>
+                      target="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b" triggers="#984e2ffb-a447-4efb-a529-fbf0af004e50 #941ae029-67e3-4f54-95da-87e1396054f2"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                       id="10127767-a2f1-4d0f-92c2-a96bf5ad8729" name="Primary Sensing Loop Progress"
                       triggerDescription="AoI exit" source="#bf1b02a4-1969-4130-82b9-34602a224196"
@@ -1904,11 +1949,11 @@
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                       id="45223290-c3d5-4a78-85bc-f9320d6bfdf8" name="Secondary Link Loop 1 Progress"
                       triggerDescription="EoT-U packet" source="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b"
-                      target="#e5a93f83-cd83-4e2b-8987-06b0e81389ab" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0 #984e2ffb-a447-4efb-a529-fbf0af004e50 #941ae029-67e3-4f54-95da-87e1396054f2"/>
+                      target="#e5a93f83-cd83-4e2b-8987-06b0e81389ab" triggers="#984e2ffb-a447-4efb-a529-fbf0af004e50 #941ae029-67e3-4f54-95da-87e1396054f2"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                       id="fda00e40-59df-45e3-be9a-f847ce83cb60" name="Secondary Link Loop 2 Progress"
                       triggerDescription="EoT-U packet" source="#e8390dae-5fbe-43e3-915e-84066cfb5e98"
-                      target="#0d701df2-5706-4700-920e-bd6280549800" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0 #984e2ffb-a447-4efb-a529-fbf0af004e50 #941ae029-67e3-4f54-95da-87e1396054f2"/>
+                      target="#0d701df2-5706-4700-920e-bd6280549800" triggers="#984e2ffb-a447-4efb-a529-fbf0af004e50 #941ae029-67e3-4f54-95da-87e1396054f2"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                       id="6d4b6917-0ce7-4498-a152-4d02cb8ea5ff" name="Primary Link Loop Entry"
                       triggerDescription="G/S contact" source="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585"
@@ -1922,31 +1967,13 @@
                       triggerDescription="G/S contact" source="#bf1b02a4-1969-4130-82b9-34602a224196"
                       target="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b" triggers="#09bcd5b1-7434-485c-921e-aefed9f23927"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="4c2b03ba-9ca8-4c10-b693-a5b1c5582062" triggerDescription=""
-                      source="#0d701df2-5706-4700-920e-bd6280549800" target="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                       id="bf8a0597-281a-410e-b6a6-360867c624d8" name="Primary Link Loop Exit"
                       triggerDescription="EoT-D packet" source="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b"
                       target="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585" triggers="#8fb64f9b-e283-4d7f-b0b7-a8fe1d3c1626 #7a7146d2-23e6-41c0-9ddd-27b256f05305"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="4f4d6801-d191-4f40-9248-1d5e3be546b6" triggerDescription=""
-                      source="#e5a93f83-cd83-4e2b-8987-06b0e81389ab" target="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="19435945-e0f0-47b6-994b-d3bb1a870b5e" triggerDescription=""
-                      source="#bf1b02a4-1969-4130-82b9-34602a224196" target="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                       id="03650af1-4c3a-4504-aa92-8fb0947a08be" name="Primary Sensing Loop Exit"
                       triggerDescription="proc. done" source="#ee45b90f-cdfe-4922-a7f9-7d1bc768074f"
                       target="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585" triggers="#0266cddc-ccd8-49a6-999e-ba702a88bafe"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="204823ab-b5ed-454a-906b-e9cb9f04b930" triggerDescription=""
-                      source="#743fd61f-065b-4443-9f53-1e3b82eb9a84" target="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="89110279-b1ef-47f9-864d-58d48214dc09" triggerDescription=""
-                      source="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b" target="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="112224ed-d2cd-4de6-85da-2889d4465c59" triggerDescription=""
-                      source="#e8390dae-5fbe-43e3-915e-84066cfb5e98" target="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585"/>
                   <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                       id="6e7be351-39d0-49a6-9726-a9f8b42c2e6d" name="Ejection Loop Entry"
                       triggerDescription="Ejection" source="#e16553ae-ffaa-4ce1-bae1-05e8dbee4585"
@@ -1987,6 +2014,30 @@
                       id="00f94579-25db-40df-ae47-d4c4ac83d1a2" name="Secondary Sensing Loop 2 Exit"
                       triggerDescription="proc. done" source="#0d701df2-5706-4700-920e-bd6280549800"
                       target="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b" triggers="#0266cddc-ccd8-49a6-999e-ba702a88bafe"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="ae48975f-a626-4082-913a-b2b5e103458a" name="Immediate Mission Imaging from SSL1 Stage 1"
+                      triggerDescription="" source="#743fd61f-065b-4443-9f53-1e3b82eb9a84"
+                      target="#e5a93f83-cd83-4e2b-8987-06b0e81389ab" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="57f24b86-0b21-4031-b902-3417892912c9" name="Immediate Mission Processing from SSL1 Stage 1"
+                      triggerDescription="" source="#743fd61f-065b-4443-9f53-1e3b82eb9a84"
+                      target="#0d701df2-5706-4700-920e-bd6280549800" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="c59c53bb-8992-4fb6-9bab-326a42bf2be4" name="Immediate Mission Idling from SSL1 Stage 1"
+                      triggerDescription="" source="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b"
+                      target="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="177a3ed3-51e7-4b3b-814c-733419f93b65" name="Immediate Mission Processing from SSL1 Stage 1"
+                      triggerDescription="" source="#fcbcf434-e51b-4afe-8e03-069a11fe4c3b"
+                      target="#0d701df2-5706-4700-920e-bd6280549800" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="0586a3a9-1e2e-4e6a-bed1-73fbe037f8dc" name="Immediate Mission Idling from SSL1 Stage 2"
+                      triggerDescription="" source="#e8390dae-5fbe-43e3-915e-84066cfb5e98"
+                      target="#02db8c5c-fa87-4a8c-b786-3526e5d74a6b" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="e47b5b55-7ede-4259-8d0e-ed5c3c4804ef" name="Immediate Mission Imaging from SSL1 Stage 2"
+                      triggerDescription="" source="#e8390dae-5fbe-43e3-915e-84066cfb5e98"
+                      target="#e5a93f83-cd83-4e2b-8987-06b0e81389ab" triggers="#0271e51f-e3fc-46ab-9196-3d1350e2ccd0"/>
                 </ownedRegions>
               </ownedStates>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
@@ -4019,28 +4070,10 @@
                       id="e6bb41ee-be69-4f2c-9095-3e347994a886" targetElement="#c4460aff-4176-4aaa-9030-dc47d7f8d480"
                       sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
                   <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
-                      id="840f15a8-c009-45de-a08c-ecc64f272797" targetElement="#4c2b03ba-9ca8-4c10-b693-a5b1c5582062"
-                      sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
-                  <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
                       id="26becba9-36e2-4cff-8a47-13b14c17d13c" targetElement="#bf8a0597-281a-410e-b6a6-360867c624d8"
                       sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
                   <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
-                      id="1bd7b850-a24f-4e81-b04a-b2e510f56f1b" targetElement="#4f4d6801-d191-4f40-9248-1d5e3be546b6"
-                      sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
-                  <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
-                      id="b9fa9057-97ea-416f-b026-b49ca68aa9fc" targetElement="#19435945-e0f0-47b6-994b-d3bb1a870b5e"
-                      sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
-                  <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
                       id="8a00d8ba-f740-4938-a17f-4ed6bdc95b5a" targetElement="#03650af1-4c3a-4504-aa92-8fb0947a08be"
-                      sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
-                  <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
-                      id="233bcc16-dc00-4f17-bd0c-95c29bacc391" targetElement="#204823ab-b5ed-454a-906b-e9cb9f04b930"
-                      sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
-                  <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
-                      id="c13aacda-3a65-4299-967c-47854ca12d80" targetElement="#89110279-b1ef-47f9-864d-58d48214dc09"
-                      sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
-                  <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
-                      id="902494fb-229d-4bca-9cd7-a8940029a3fa" targetElement="#112224ed-d2cd-4de6-85da-2889d4465c59"
                       sourceElement="#cfb06bb3-bf50-431d-bd84-7eb58859632a"/>
                   <ownedStateTransitionRealizations xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransitionRealization"
                       id="c724e8af-a096-4213-bf59-d464d6f931ed" targetElement="#6e7be351-39d0-49a6-9726-a9f8b42c2e6d"
