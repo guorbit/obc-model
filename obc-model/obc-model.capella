@@ -2625,9 +2625,6 @@
               id="bb26e4eb-f438-4f16-9a09-2d410a87fa5b" targetElement="#1a0780db-5f35-40b1-8183-d0ce4eaa9866"
               sourceElement="#d9992078-4c0c-43af-b32c-c6a01d788ec4"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="04154937-5ddf-440d-b423-4628134075f3" targetElement="#f32925a0-6708-4da9-ad93-ef5459d07d5c"
-              sourceElement="#3bd15a26-183b-4c5d-9d74-e4f128667730"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="539369ad-38eb-4bc0-a040-6edb3690bc34" targetElement="#6b477aa2-bbab-4101-82cf-25255a99e2b8"
               sourceElement="#95957a8e-0804-40de-bf1f-6dc6437f1eeb"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
@@ -2637,26 +2634,14 @@
               id="4fe814bb-ef51-4b5f-aeb9-8f439758be6a" targetElement="#f73f277a-d047-4b6e-bb84-4fd8067f04d3"
               sourceElement="#a5f20770-37f8-41de-a75d-a6bd053b12b2"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="753fb870-0d79-4fcb-aae1-66cce38e1209" targetElement="#ed0e32c8-0861-4468-a3d8-bdbcd1db44bf"
-              sourceElement="#7ca22864-7ac9-466c-8957-c8332380683d"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="65f4877d-1309-4ce5-a60f-448503a5fe0f" targetElement="#3a55532d-040b-4d99-acf0-017ebc39f2e1"
               sourceElement="#71eacf0b-71c1-4533-9147-32bf2a6a6911"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="3993fc7a-77b9-4c29-9dd3-88b7fc1dd55e" targetElement="#dd8c539e-00f9-4ec6-b492-6c5921bc2af3"
-              sourceElement="#88901430-71ae-4133-b625-97eed0c4a09a"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="7478eefb-2124-4b2b-850f-e48e344cfcfa" targetElement="#e3417af2-d738-46fc-bcf2-a428bc1945fc"
-              sourceElement="#41213468-c718-4bfa-92e4-d255c8dd5285"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="f6e9b033-be47-42f5-8a32-eba7a0e76a85" targetElement="#6ed2871f-01a8-4771-8efc-c549cbdcd08c"
               sourceElement="#d17b03f1-21ac-434e-abd2-d1a9655e8b3d"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="cde25ef1-34df-4d47-92bd-99640a6546ed" targetElement="#5a82696b-a721-4c0b-a6c8-a036705068d1"
               sourceElement="#502826ce-a326-4ec0-989f-809d7bb597e6"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="16312273-6f89-4678-b9be-98a6cd4c5cce" targetElement="#8ebf46b0-c5a2-44f1-9f33-323df3c92bab"
-              sourceElement="#361bb2a4-597e-4975-9344-684ebfee86ee"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="08c45036-26dd-4554-b163-09efa1b75e6b" targetElement="#5e82d604-03b5-414e-90e5-2c90d12246c7"
               sourceElement="#bab76dae-ee67-4101-aade-91ef836d9cdb"/>
@@ -2840,24 +2825,6 @@
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="848848ff-277d-4fd5-b880-3ac117fabfe7" targetElement="#8cb8defc-d7b0-4e68-ad05-a1674abb5b5c"
               sourceElement="#2e45ca81-ac94-4811-8e79-ca3737147015"/>
-          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
-              id="ee84f909-48df-44c0-b165-df0cbe7e5166" name="Auto mode change (Sensing entry)">
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="3bd15a26-183b-4c5d-9d74-e4f128667730" involved="#771767b9-03aa-4e7e-936e-e7340e56e5c4"
-                source="#88901430-71ae-4133-b625-97eed0c4a09a" target="#7ca22864-7ac9-466c-8957-c8332380683d"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="7ca22864-7ac9-466c-8957-c8332380683d" involved="#f9f1b047-778c-454f-a084-9f70d8e1ee7a"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="88901430-71ae-4133-b625-97eed0c4a09a" involved="#04541949-f340-40cd-850f-91aaf5135072"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="41213468-c718-4bfa-92e4-d255c8dd5285" involved="#3351ed75-fb98-4e12-9e45-d904b5513e3a"
-                source="#7ca22864-7ac9-466c-8957-c8332380683d" target="#361bb2a4-597e-4975-9344-684ebfee86ee"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="361bb2a4-597e-4975-9344-684ebfee86ee" involved="#f02914d0-becb-4e03-be00-273d14f69c66"/>
-            <ownedFunctionalChainRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainRealization"
-                id="c8ed4821-379b-491d-afe5-1f258e498128" targetElement="#8af62f47-48f0-482f-9207-fb88b154696a"
-                sourceElement="#ee84f909-48df-44c0-b165-df0cbe7e5166"/>
-          </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
               id="fedfc0f9-ce2d-4ce0-baa6-e14298d564d4" name="Auto mode change (Sensing progress)">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
@@ -3323,6 +3290,9 @@
                 source="#77fb2361-0de7-47a2-a4fc-8ef6eb8c811e" target="#0e78bf42-5ba3-4c53-8251-279da9267477"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="0e78bf42-5ba3-4c53-8251-279da9267477" involved="#1e83b018-edcc-45c4-abef-75595e73ce6b"/>
+            <ownedFunctionalChainRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainRealization"
+                id="6f01e88b-9c8a-480a-afb4-fca7e3e2f91b" targetElement="#8af62f47-48f0-482f-9207-fb88b154696a"
+                sourceElement="#004517b8-0b5c-4eed-86fd-9429434ca230"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
               id="1f5cfe11-789d-4f3a-b5a2-f39c1981078f" name="Auto mode change (Sensing exit)">
