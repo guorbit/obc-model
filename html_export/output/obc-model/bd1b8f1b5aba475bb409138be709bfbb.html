@@ -8,7 +8,7 @@
 		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
 		<meta http-equiv="Content-Style-Type" content="text/css" />
 
-		<title>Capella - obc-model - SystemFunction Receive mode change telecommand</title>
+		<title>Capella - obc-model - SystemFunction Receive mode change TC</title>
 		<link rel="stylesheet" href="../../scripts/jquery-treeview/jquery.treeview.css" />
   		<script src="../../scripts/jquery-treeview/lib/jquery-1.11.1.js" type="text/javascript"></script>
   		<script src="../../scripts/jquery-treeview/jquery.treeview.js" type="text/javascript"></script>
@@ -42,9 +42,9 @@
 	</head>
 	
 	<body>	<div id="content">
-<img src="../icon/SystemFunction.png" alt="SystemFunction" style="float:left; margin-right:10px" /><h1><a href="../obc-model/bd1b8f1b5aba475bb409138be709bfbb.html">Receive mode change telecommand</a></h1>
+<img src="../icon/SystemFunction.png" alt="SystemFunction" style="float:left; margin-right:10px" /><h1><a href="../obc-model/bd1b8f1b5aba475bb409138be709bfbb.html">Receive mode change TC</a></h1>
 <p style="margin-top:3px; margin-bottom:3px"><span class="elementMetaClass">SystemFunction</span></p>
-<em class="elementPath"><a href="../obc-model/aaac88125a074074a6d4d45e2d34224b.html">obc&#045;model</a> > <a href="../obc-model/dad23c8bf3284ffcb0b5eaef7bb6b189.html">obc&#045;model</a> > <a href="../obc-model/bded3fa2727143049ed09954b79d3e56.html">System Analysis</a> > <a href="../obc-model/5a85247aac5045ce82839063c53854eb.html">System Functions</a> > <a href="../obc-model/4b60da94e8b24d7f973a9f600aa4047e.html">Root System Function</a> > <a href="../obc-model/bd1b8f1b5aba475bb409138be709bfbb.html">Receive mode change telecommand</a></em>
+<em class="elementPath"><a href="../obc-model/aaac88125a074074a6d4d45e2d34224b.html">obc&#045;model</a> > <a href="../obc-model/dad23c8bf3284ffcb0b5eaef7bb6b189.html">obc&#045;model</a> > <a href="../obc-model/bded3fa2727143049ed09954b79d3e56.html">System Analysis</a> > <a href="../obc-model/5a85247aac5045ce82839063c53854eb.html">System Functions</a> > <a href="../obc-model/4b60da94e8b24d7f973a9f600aa4047e.html">Root System Function</a> > <a href="../obc-model/bd1b8f1b5aba475bb409138be709bfbb.html">Receive mode change TC</a></em>
 
 <p>
 No description.
@@ -58,11 +58,16 @@ No description.
 
 
 
+<h2>Involving Functional Chains</h2>
+<ul class="generatedList"><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../obc-model/5cf1801fdf24447db08840d432f2eded.html">Telecommanded mode change</a></li></ul>
 <h2>Allocating Component</h2>
 
 <ul class="generatedList"><li><img src="../icon/SystemComponent.png" alt="SystemComponent" /> <a href="../obc-model/8f68ec0bd37c4dfd9b29518cf20c5078.html">System</a></li></ul>
 <h2>Incoming Functional Ports</h2>
 <ul class="generatedList"><li><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../obc-model/619d120c979d45b4ae35283f97732999.html">FIP 1</a></li></ul>
+
+<h2>Outgoing Functional Ports</h2>
+<ul class="generatedList"><li><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../obc-model/83eef036c86b4a7aaf184ecccf8acbb0.html">FOP 1</a></li></ul>
 
 	<h2>Incoming Functional Exchanges</h2>
 	<table>
@@ -77,14 +82,29 @@ No description.
 		<th>Realized Functional Exchange</th>
 		<th>Realizing Functional Exchange</th>
 	</tr>
-	<tr><td id="id0271e51f-e3fc-46ab-9196-3d1350e2ccd0"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../obc-model/0271e51fe3fc46ab91963d1350e2ccd0.html">Mode change telecommand transmission</a></td><td></td><td></td><td><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../obc-model/0c884eca2a284d83ba6bd33162ffdbf5.html">FOP 1</a></td><td><img src="../icon/ActorSystemFunction.png" alt="SystemFunction" /> <a href="../obc-model/01db86c6539942d2a5bc0ccf1ae3ab5f.html">Send mode change telecommand</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../obc-model/c9c0f3740fb24e00a8a4328486073ce1.html">Mode change telecommand transmission</a></li></ul></td></tr>
+	<tr><td id="id0271e51f-e3fc-46ab-9196-3d1350e2ccd0"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../obc-model/0271e51fe3fc46ab91963d1350e2ccd0.html">Mode change TC transmission</a></td><td><ul class="generatedList"><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../obc-model/5cf1801fdf24447db08840d432f2eded.html">Telecommanded mode change</a></li></ul></td><td></td><td><img src="../icon/FunctionOutputPort.png" alt="FunctionOutputPort" /> <a href="../obc-model/0c884eca2a284d83ba6bd33162ffdbf5.html">FOP 1</a></td><td><img src="../icon/ActorSystemFunction.png" alt="SystemFunction" /> <a href="../obc-model/01db86c6539942d2a5bc0ccf1ae3ab5f.html">Send mode change TC</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../obc-model/c9c0f3740fb24e00a8a4328486073ce1.html">Mode change TC transmission</a></li></ul></td></tr>
+</table>
+	<h2>Outgoing Functional Exchanges</h2>
+	<table>
+	<tr>
+		<th>Exchange</th>
+		<th>Involving functional chains</th>
+		<th>Allocating component Exchanges</th>
+		<th>Distant Port</th>
+		<th>Target</th>
+		<th>Description</th>
+		<th>Allocated Exchange Items</th>
+		<th>Realized Functional Exchange</th>
+		<th>Realizing Functional Exchange</th>
+	</tr>
+	<tr><td id="id54d1d54a-169c-466b-a69e-68715cf4a4c3"><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../obc-model/54d1d54a169c466ba69e68715cf4a4c3.html">Mode change TC dump</a></td><td><ul class="generatedList"><li><img src="../icon/FunctionalChain.png" alt="FunctionalChain" /> <a href="../obc-model/5cf1801fdf24447db08840d432f2eded.html">Telecommanded mode change</a></li></ul></td><td></td><td><img src="../icon/FunctionInputPort.png" alt="FunctionInputPort" /> <a href="../obc-model/935c8a99e9ba4230a75e7ee4f25e6258.html">FIP 1</a></td><td><img src="../icon/SystemFunction.png" alt="SystemFunction" /> <a href="../obc-model/eafb6ab1d1bd4035a8ebf2fd9d925dfb.html">Change mode</a></td><td></td><td></td><td></td><td><ul class="generatedList"><li><img src="../icon/FunctionalExchange.png" alt="FunctionalExchange" /> <a href="../obc-model/61cabc6336f044bf96202f7147c2725b.html">Mode change TC dump</a></li></ul></td></tr>
 </table>
 <h2>Modes and States</h2>
 <ul class="generatedList"><li><img src="../icon/State.png" alt="State" /> <a href="../obc-model/743fd61f065b44439f531e3b82eb9a84.html">Uplink</a></li><li><img src="../icon/State.png" alt="State" /> <a href="../obc-model/fcbcf434e51b4afe8e03069a11fe4c3b.html">Imaging &amp; Uplink</a></li><li><img src="../icon/State.png" alt="State" /> <a href="../obc-model/e8390dae5fbe43e3915e84066cfb5e98.html">Processing LP &amp; Uplink</a></li><li><img src="../icon/State.png" alt="State" /> <a href="../obc-model/376d936af0a64316b15105ae4482d84e.html">Deployment</a></li></ul>
 
 <h2>Realizing Elements </h2>
 
-<ul class="generatedList"><li><img src="../icon/LogicalFunction.png" alt="LogicalFunction" /> <a href="../obc-model/40db9fe1014f48ffa03c10359ae0fbe3.html">Receive mode change telecommand</a></li></ul>
+<ul class="generatedList"><li><img src="../icon/LogicalFunction.png" alt="LogicalFunction" /> <a href="../obc-model/40db9fe1014f48ffa03c10359ae0fbe3.html">Receive mode change TC</a></li></ul>
 
 
 
@@ -95,13 +115,19 @@ No description.
 
 
 
-<h2>Diagrams displaying "Receive mode change telecommand"</h2>
+<h2>Diagrams displaying "Receive mode change TC"</h2>
 <ul>
 <li>
-<a href="../obc-model/93ee55831ec245fbb0bd2214c3e94968.html#_eMxXIFeTEe2Q8bVjVkF_6g">&#091;ES&#093; Commanded Mode Change Scenario</a> 
+<a href="../obc-model/93ee55831ec245fbb0bd2214c3e94968.html#_eMxXIFeTEe2Q8bVjVkF_6g">&#091;ES&#093; Commanded Mode Change System Scenario</a> 
 </li>
 <li>
-<a href="../obc-model/a005057b329747edb8b85a6268853cc6.html#_R33scFeSEe2Q8bVjVkF_6g">&#091;SAB&#093; System Architecture</a> 
+<a href="../obc-model/a005057b329747edb8b85a6268853cc6.html#_R33scFeSEe2Q8bVjVkF_6g">&#091;SAB&#093; Root System Architecture</a> 
+</li>
+<li>
+<a href="../obc-model/a005057b329747edb8b85a6268853cc6.html#_ZwKBELIYEe2w1uBl4t3qAA">&#091;SAB&#093; System Architecture View of Mode Changes</a> 
+</li>
+<li>
+<a href="../obc-model/a005057b329747edb8b85a6268853cc6.html#_4rR1cLIYEe2w1uBl4t3qAA">&#091;SAB&#093; System Architecture View of Telecommands</a> 
 </li>
 <li>
 <a href="../obc-model/4b60da94e8b24d7f973a9f600aa4047e.html#_c9pjgFeREe2Q8bVjVkF_6g">&#091;SFBD&#093; Root System Function Breakdown</a> 
