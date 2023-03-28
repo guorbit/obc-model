@@ -12375,8 +12375,6 @@
                 id="cde8d697-53e1-4d66-876e-d1cc83ed3fb1"/>
           </ownedScenarios>
           <ownedCapabilityRealizationInvolvements xsi:type="org.polarsys.capella.core.data.capellacommon:CapabilityRealizationInvolvement"
-              id="a6871033-501c-43b8-8c9b-09d545d8ca7b"/>
-          <ownedCapabilityRealizationInvolvements xsi:type="org.polarsys.capella.core.data.capellacommon:CapabilityRealizationInvolvement"
               id="b7781f6b-2cfe-4300-a5c6-abd91bea35a4" involved="#0c6222e3-cf21-49ba-8a5b-da7b78c75b94"/>
           <ownedCapabilityRealizationInvolvements xsi:type="org.polarsys.capella.core.data.capellacommon:CapabilityRealizationInvolvement"
               id="a75aff8a-8872-49e0-9204-6f7be2ad479a" involved="#71a3d1ad-6e00-4240-9d64-5ad7af258bde"/>
