@@ -4629,8 +4629,6 @@
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="6f4f3dbd-37f9-49f3-be7c-b41a4441dc02" name="FOP 1"/>
             </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="d91114c4-2f4b-4893-b00b-da980896aa8a" name="Check Communication Subsystem's health"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="55851010-e336-4b00-9b0d-258a998571f6" targetElement="#11e34d29-6eea-4af5-9b5b-ff74f4667ccb"
                 sourceElement="#d0453838-a61a-40c2-80b1-01969f441596"/>
@@ -4648,8 +4646,6 @@
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="4380927f-c7e5-4ad8-baf6-936584a5e838" name="FIP 1"/>
             </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="578bc8c7-3698-4ee1-b2d8-afa469d9881b" name="Restore Communication Subsystem's health"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="5d858fb2-6d6c-4dff-8118-ee3af0a24f7f" targetElement="#78b716ab-d33b-460d-b3ac-26b286ae5f41"
                 sourceElement="#c6309b6f-4286-408c-9c70-ec54cc0c1b12"/>
@@ -6727,13 +6723,7 @@
                 id="b785c6c0-0514-4cd9-acda-1891b057e6a6" targetElement="#554e1537-95f1-4bb2-b260-0a2e2c652a22"
                 sourceElement="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="efd599b9-2479-42ae-8a7b-9553d28361c0" targetElement="#d91114c4-2f4b-4893-b00b-da980896aa8a"
-                sourceElement="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="c5024748-6504-4703-9e03-a92d9d180a67" targetElement="#d8b3131b-4d46-4d88-8998-f2e9e04b64c6"
-                sourceElement="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="2f778d14-34ec-4891-9f6c-565fb7f207fa" targetElement="#578bc8c7-3698-4ee1-b2d8-afa469d9881b"
                 sourceElement="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
             <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
                 id="8df8f30a-508b-45d4-8ef5-7821071e0f77" name="OBC State Machine">
@@ -10021,12 +10011,6 @@
                   id="2c3439bd-aff6-4bf4-95b7-32709b5eec79" name="Time between kicks elapsed"
                   target="#a1899700-7b4a-404d-b6ae-1a7590f4d98f" source="#208eed79-0a6c-482f-901f-cafbe4980335"/>
             </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                id="ab22db3c-faf7-49b2-9720-e075e8e1ebd8" name="Check Communication Subsystem's health">
-              <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                  id="2645a5e0-d547-4cba-8ca0-00e0d74f823d" targetElement="#d91114c4-2f4b-4893-b00b-da980896aa8a"
-                  sourceElement="#ab22db3c-faf7-49b2-9720-e075e8e1ebd8"/>
-            </ownedFunctions>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="60b1874c-d7f7-437f-9c3b-9aaf4fdfb859" targetElement="#d0453838-a61a-40c2-80b1-01969f441596"
                 sourceElement="#db311da8-5d52-475e-9873-5595ffad30ad"/>
@@ -10079,12 +10063,6 @@
               <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
                   id="7a142419-cbe0-4e74-a559-6e347bf3f850" name="Initiate reset"
                   target="#bcbd8cf4-3600-48d1-89af-a103f5f08ea7" source="#6ff6c953-d3c1-44dc-8b32-217847598f39"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-                id="09408649-82b2-4647-aa23-6a9b0e6b42fc" name="Restore Communication Subsystem's health">
-              <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                  id="dc5650e2-a75b-484d-983d-ccb8694aaf3b" targetElement="#578bc8c7-3698-4ee1-b2d8-afa469d9881b"
-                  sourceElement="#09408649-82b2-4647-aa23-6a9b0e6b42fc"/>
             </ownedFunctions>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="f10e393a-13af-4a86-9bdb-f41c4f6d5f6d" targetElement="#c6309b6f-4286-408c-9c70-ec54cc0c1b12"
@@ -13591,14 +13569,7 @@
             </ownedPhysicalComponents>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="0b812070-0880-484a-97a1-b412cca198a1" name="Other subsystems health monitoring group"
-                nature="BEHAVIOR">
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="ca6afa79-9b19-4fb4-af14-e3d1a5a2a48b" targetElement="#ab22db3c-faf7-49b2-9720-e075e8e1ebd8"
-                  sourceElement="#0b812070-0880-484a-97a1-b412cca198a1"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="fa0870f5-3945-489c-b0ee-0639bd79d808" targetElement="#09408649-82b2-4647-aa23-6a9b0e6b42fc"
-                  sourceElement="#0b812070-0880-484a-97a1-b412cca198a1"/>
-            </ownedPhysicalComponents>
+                nature="BEHAVIOR"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="04d13463-03ee-4161-9537-0c92a4808a3f" name="OBC MCU" nature="NODE">
