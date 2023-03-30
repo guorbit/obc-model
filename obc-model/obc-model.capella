@@ -2668,6 +2668,18 @@
                   id="7722281c-0373-4a47-a7dd-b82c3332bd85" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
                   source="#dc7150cd-2bf3-409d-aaa8-31209b2fd28c" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
             </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="15e495d1-b702-4b50-9958-f8b5cfd73c57"
+                ReqIFIdentifier="A01-OBC-FLT-F-010" ReqIFPrefix="" ReqIFText="The OBC shall be reset by an external watchdog after the timeout period in case of a lack of responsiveness.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="5a901a1c-ce9a-423f-9a6b-0d116a400039" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#15e495d1-b702-4b50-9958-f8b5cfd73c57" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="44333bfe-e0c0-4854-b186-63ad6015c63e"
+                ReqIFIdentifier="A01-OBC-FLT-P-001" ReqIFText="The OBC shall periodically send a signal to its external watchdog within its timeout period (500ms), no matter whether it's being done after the reset or not.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="2cc82edb-1bd7-4a89-b56f-94cbb5b36e27" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#44333bfe-e0c0-4854-b186-63ad6015c63e" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
           </ownedRequirements>
           <ownedRequirements xsi:type="Requirements:Folder" id="6adb3467-b18c-4deb-b186-92d5b7da9cfb"
               ReqIFName="99 Miscellaneous">
