@@ -12685,6 +12685,12 @@
             <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                 id="2bae53b6-cb11-4d24-bc88-93153cf441bf" deployedElement="#84c04974-3937-4029-959c-088531a2c7df"
                 location="#e93c3b20-d238-48ae-bf16-57428c7c38ac"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="49e63456-0817-4bda-b0b5-48315c161494" deployedElement="#712566ca-f17b-429d-8641-038e967e3f9b"
+                location="#e93c3b20-d238-48ae-bf16-57428c7c38ac"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="35aa42af-08c9-47ef-bbd7-70935caeafc7" deployedElement="#2fecb9ec-11e0-4ea1-90cf-46b7c297c7c5"
+                location="#e93c3b20-d238-48ae-bf16-57428c7c38ac"/>
           </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6c37e7fe-30e0-4efc-9868-be6b05f02860"
               name="OBC MCU" abstractType="#04d13463-03ee-4161-9537-0c92a4808a3f">
@@ -12699,12 +12705,6 @@
                 location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
             <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                 id="1b760acc-7941-4def-97c5-525b22d3d498" deployedElement="#363ac6dc-ec7f-40a3-8042-cc6d4b13c344"
-                location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
-            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                id="35aa42af-08c9-47ef-bbd7-70935caeafc7" deployedElement="#2fecb9ec-11e0-4ea1-90cf-46b7c297c7c5"
-                location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
-            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                id="49e63456-0817-4bda-b0b5-48315c161494" deployedElement="#712566ca-f17b-429d-8641-038e967e3f9b"
                 location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
           </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f287b5e8-c625-4f3e-9bd7-841d2ee4f25f"
