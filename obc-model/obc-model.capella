@@ -4919,6 +4919,13 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="a6c3acba-59d8-4d69-bbb0-fe5b1c1de3a1" name="OBC faulty, restore to health"
               target="#4380927f-c7e5-4ad8-baf6-936584a5e838" source="#6f4f3dbd-37f9-49f3-be7c-b41a4441dc02"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="94da79f4-8c52-482a-953c-71c12b4b90bf" name="System faulty, restore to health"
+              target="#c368927e-627a-4374-a117-6c4fe73e9c59" source="#13189378-28d1-4b25-96fc-7ab63fcb09d1">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="684660a7-4b95-43ad-9351-ce2d8224c61a" targetElement="#185d08b1-c794-4dc3-beea-5919cd04e152"
+                sourceElement="#94da79f4-8c52-482a-953c-71c12b4b90bf"/>
+          </ownedFunctionalExchanges>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -8102,21 +8109,11 @@
                 source="#b6e0c512-4c89-4c03-b367-18d888103f4f" target="#2fbc37a8-22df-4162-a335-cf82d34b9b08"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="2fbc37a8-22df-4162-a335-cf82d34b9b08" involved="#fcb856d9-5676-46ac-99ef-093f0dde59c2"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="93804e68-dd2e-4f16-99f1-fd823b8b6b49" involved="#a0fcc7dc-3876-4949-a666-731691691503"
-                source="#2fbc37a8-22df-4162-a335-cf82d34b9b08" target="#d2ce375a-b862-4c1e-8374-be900d0ed584"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="d2ce375a-b862-4c1e-8374-be900d0ed584" involved="#9e06c114-df52-4ce2-8106-95cc42fc82e4"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="a95eabd3-d16e-4334-b23a-66189ac78bd3" involved="#9c82fa6b-1aec-4eaf-8cd2-4120dd7bf9ae"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
                 id="3e7ad568-5876-4675-8fcf-785e4e662446" involved="#4fecea8a-f99c-4497-aa26-0893d12567e2"
                 source="#0cd54df5-ed99-4157-8652-379651c71a82" target="#a95eabd3-d16e-4334-b23a-66189ac78bd3"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="71a7db3c-9a60-49ae-8f66-b3ffc195a46e" involved="#9c82fa6b-1aec-4eaf-8cd2-4120dd7bf9ae"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="f4b58fc4-962b-424a-9236-1ce77efb09d5" involved="#618d1637-604f-4304-a982-cd8df2abb91d"
-                source="#d2ce375a-b862-4c1e-8374-be900d0ed584" target="#71a7db3c-9a60-49ae-8f66-b3ffc195a46e"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="d3a49d3e-7a94-4882-9eeb-a05f63ce3781" name="Change mode" availableInStates="#eb48d344-16a4-4e2f-88a3-877df9e07ece #4462581c-f9a3-4f32-8eca-ff5ee372297f #9c0de4b2-6196-49ba-9bef-0d8411eb557b #4bb8dda9-9d8b-4e75-b853-c685441c3717 #4e26f033-aa89-420a-840e-c9a610253dea #e66c6a4e-508e-4538-a4b7-ab30cf407e1e #5336a8c1-f320-4249-b5ef-fc616132d38a #0b6f7286-3552-40cd-bb93-0fe63f6a454d #2bf28430-fcce-4853-92ce-503b6895e353 #52b61911-c619-4244-ad65-10a078c1b5ef #fe3442ee-55b1-4168-9804-45bddd6e1e67 #86387832-70e4-4dfc-b6c9-fc9f0ee4a954">
@@ -10546,6 +10543,20 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="24764f3a-16fb-4969-b4c4-f542f2ee9c11" name="Successful reset" target="#e7ea8b89-935c-4fec-bfc5-7dc53cf06bec"
               source="#0cbdda5c-60ce-4c38-805f-8e828a1bf076"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="113c5c3d-e646-4a50-9850-ad49ecdebea9" name="OBC faulty, restore to health"
+              target="#468479c8-698c-4e87-a33a-738c6fcba0b2" source="#83db5958-9968-4c1b-a6dc-168b406fc6b8">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="64d034af-0989-4f67-bea1-2913c531f56a" targetElement="#a6c3acba-59d8-4d69-bbb0-fe5b1c1de3a1"
+                sourceElement="#113c5c3d-e646-4a50-9850-ad49ecdebea9"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="204d146c-8d8b-4f36-ac0f-3c19b61710cc" name="System faulty, restore to health"
+              target="#c51ab28f-8ff0-4c47-97b8-1bfa97d24298" source="#31d9554f-1de9-4d46-837f-e4d11aa07572">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="4fb657c9-8521-4bfa-b1eb-dc1a14dfc1e0" targetElement="#94da79f4-8c52-482a-953c-71c12b4b90bf"
+                sourceElement="#204d146c-8d8b-4f36-ac0f-3c19b61710cc"/>
+          </ownedFunctionalExchanges>
         </ownedPhysicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
