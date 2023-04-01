@@ -2669,16 +2669,39 @@
                   source="#dc7150cd-2bf3-409d-aaa8-31209b2fd28c" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
             </ownedRequirements>
             <ownedRequirements xsi:type="Requirements:Requirement" id="15e495d1-b702-4b50-9958-f8b5cfd73c57"
-                ReqIFIdentifier="A01-OBC-FLT-F-010" ReqIFPrefix="" ReqIFText="The OBC shall be reset by an external watchdog after the timeout period in case of a lack of responsiveness.">
+                ReqIFIdentifier="A01-OBC-FLT-F-010" ReqIFName="OBCRequirement061"
+                ReqIFPrefix="" ReqIFText="The OBC shall monitor the health of its own application-level software.">
               <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
                   id="5a901a1c-ce9a-423f-9a6b-0d116a400039" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
                   source="#15e495d1-b702-4b50-9958-f8b5cfd73c57" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
             </ownedRequirements>
             <ownedRequirements xsi:type="Requirements:Requirement" id="44333bfe-e0c0-4854-b186-63ad6015c63e"
-                ReqIFIdentifier="A01-OBC-FLT-P-001" ReqIFText="The OBC shall periodically send a signal to its external watchdog within its timeout period (500ms), no matter whether it's being done after the reset or not.">
+                ReqIFIdentifier="A01-OBC-FLT-F-011" ReqIFName="OBCRequirement062"
+                ReqIFText="The OBC shall periodically send a heartbeat signal to its external watchdog timer.">
               <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
                   id="2cc82edb-1bd7-4a89-b56f-94cbb5b36e27" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
                   source="#44333bfe-e0c0-4854-b186-63ad6015c63e" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="ab7f46f9-1573-48fe-b0c4-3bceb4adfd1c"
+                ReqIFIdentifier="A01-OBC-FLT-F-012" ReqIFName="OBCRequirement063"
+                ReqIFText="The OBC shall handle any signal from its external watchdog timer as a hardware reset.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="4cd43d28-795d-4efb-b11c-c2e6126a9c38" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#ab7f46f9-1573-48fe-b0c4-3bceb4adfd1c" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="1f49db76-4b65-42a9-84d4-abd326669de9"
+                ReqIFIdentifier="A01-OBC-FLT-P-001" ReqIFName="OBCRequirement064"
+                ReqIFText="The effective time between OBC heartbeat signals shall be at most 40% of its external watchdog timer reset period.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="0431d7f9-5c4e-4e4c-a691-ac0c8ba470e3" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#1f49db76-4b65-42a9-84d4-abd326669de9" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
+            </ownedRequirements>
+            <ownedRequirements xsi:type="Requirements:Requirement" id="5e8b9da4-99ef-431f-a07f-07ae424943f0"
+                ReqIFIdentifier="A01-OBC-FLT-P-002" ReqIFName="OBCRequirement065"
+                ReqIFText="The effective time from OBC boot to the first heartbeat signal shall be at most 40% of its external watchdog timer reset period.">
+              <ownedRelations xsi:type="CapellaRequirements:CapellaIncomingRelation"
+                  id="d671e1dc-d1c7-4c9f-9109-1fe3c2dd2a82" relationType="#1a29315a-fbf7-43ce-9968-95c9e9df33fc"
+                  source="#5e8b9da4-99ef-431f-a07f-07ae424943f0" target="#b5f35c7a-dc50-4ef7-bbe7-99845b0b52b4"/>
             </ownedRequirements>
           </ownedRequirements>
           <ownedRequirements xsi:type="Requirements:Folder" id="6adb3467-b18c-4deb-b186-92d5b7da9cfb"
