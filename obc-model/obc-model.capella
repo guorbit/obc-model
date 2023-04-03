@@ -12134,9 +12134,6 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6c37e7fe-30e0-4efc-9868-be6b05f02860"
               name="OBC MCU" abstractType="#04d13463-03ee-4161-9537-0c92a4808a3f">
             <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                id="5f9abca0-f1b8-4bfa-a5af-c4fda5e9eb43" deployedElement="#e93c3b20-d238-48ae-bf16-57428c7c38ac"
-                location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
-            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                 id="1920682f-d938-4d9c-8913-7cda8df51037" deployedElement="#08154366-c968-4fad-b10c-83c4f7781a48"
                 location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
             <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
@@ -12144,6 +12141,9 @@
                 location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
             <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                 id="1b760acc-7941-4def-97c5-525b22d3d498" deployedElement="#363ac6dc-ec7f-40a3-8042-cc6d4b13c344"
+                location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="5f9abca0-f1b8-4bfa-a5af-c4fda5e9eb43" deployedElement="#e93c3b20-d238-48ae-bf16-57428c7c38ac"
                 location="#6c37e7fe-30e0-4efc-9868-be6b05f02860"/>
           </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f287b5e8-c625-4f3e-9bd7-841d2ee4f25f"
