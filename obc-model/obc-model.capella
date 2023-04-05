@@ -12995,6 +12995,10 @@
               nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="1391f961-6a76-44ea-96cf-fc4cd4d0f92f" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5b6efc47-0438-4c18-a7cc-e5cae7e1e635"
+                name="PC 1" abstractType="#75dab7cd-49d8-4963-986f-ada82c22e186"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="75dab7cd-49d8-4963-986f-ada82c22e186" name="PC 1" nature="NODE"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="c87d3f1d-356c-46f1-a428-db3f90d19857" name="Sensors" nature="NODE">
@@ -13277,6 +13281,11 @@
                 id="4458885b-f511-4352-9bd3-7da3af5ce5d0" name="PP 1"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="6461e5a3-d430-4e47-a010-658be01b5afb" name="PP 2"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2763fd52-d2e9-4373-bbd2-e00af824be15"
+                name="Pipeline Non-Volatile Memory" abstractType="#af404477-5702-4cdd-bfbb-67f31d78f4e3"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="af404477-5702-4cdd-bfbb-67f31d78f4e3" name="Pipeline Non-Volatile Memory"
+                nature="NODE"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="b568ac79-6d76-4f04-8c24-9effbc6ac62a" name="Camera Behaviour" nature="BEHAVIOR">
@@ -13303,6 +13312,11 @@
               id="dad1ddf8-d22d-4f3b-a2df-895a2c270007" name="EPS MCU" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="4da59b40-7119-4bcc-a079-fe90a09ce6af" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8ee9f8fd-8148-4f28-b6c5-d96638220cb2"
+                name="EPS Non-Volatile memory" abstractType="#b03dce2c-b297-42d3-8539-e981b2f5ee8f"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="b03dce2c-b297-42d3-8539-e981b2f5ee8f" name="EPS Non-Volatile memory"
+                nature="NODE"/>
           </ownedPhysicalComponents>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
