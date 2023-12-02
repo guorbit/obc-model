@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+   "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title>Index</title>
+</head>  <script type="text/javascript">
+document.write('<frameset rows="63,*,40" frameborder="0" framespacing="0" border="0">');
+document.write('<frame src="header.html" name="header" marginheight="0" marginwidth="0" scrolling="no" noresize="0"/>');
+document.write('<frameset cols="22%,*" border="5" frameborder="1" framespacing="1">');
+document.write('<frame src="sidebar.html" name="sideBar"/>');
+var locationText = "";
+var anchorText = "";
+if (location.search) {
+	locationText = location.search.substring(1);
+	if (location.href.lastIndexOf("#")>0) {
+		anchorText = anchorText + "#" + location.href.substring(location.href.lastIndexOf("#")+1);
+	}
+} else {
+	locationText = "dad23c8bf3284ffcb0b5eaef7bb6b189";
+}
+document.write('<frame src="'+ locationText +'.html' + anchorText + '" name="content"\/>');
+document.write('<noframes>');
+document.write('Your browser cannot display this page !');
+  document.write('</noframes>');
+document.write('</frameset>');
+document.write('<frame src="footer.html" name="footer" scrolling="no" frameborder="0" noresize="noresize"/>');
+document.write('<noframes>');
+document.write('Your browser cannot display this page !');
+document.write('</noframes>');
+document.write('</frameset>');
+</script></html>

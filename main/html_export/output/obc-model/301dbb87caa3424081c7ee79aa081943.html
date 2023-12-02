@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta name="copyright" content="Copyright &copy; 2014 The Eclipse Foundation. All Rights Reserved." />
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+
+		<title>Capella - obc-model - Scenario &#091;ES&#093; System Mode Change Physical Scenario</title>
+		<link rel="stylesheet" href="../../scripts/jquery-treeview/jquery.treeview.css" />
+  		<script src="../../scripts/jquery-treeview/lib/jquery-1.11.1.js" type="text/javascript"></script>
+  		<script src="../../scripts/jquery-treeview/jquery.treeview.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/simpletree.css" />		
+		<link title="default" rel="stylesheet" type="text/css" media="screen, projection" href="../../css/content.css"></link>
+		<script type="text/javascript">
+			if(parent.location.href == self.location.href) {
+				window.location.href = 'index.html?301dbb87caa3424081c7ee79aa081943' + '#' + self.location.href.substring(self.location.href.lastIndexOf("#")+1);
+			}
+		</script>
+		
+		<style>
+			body {
+				background: white;
+				font-family: Arial;
+			}
+			.treeview {
+				background-color: white ;
+			}
+	
+			.treeview ul{ /*CSS for Simple Tree Menu*/
+				background-color: white;
+				font-size: 12px;
+			}
+	
+			.treeview li{ /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+				background-color: white;
+			}
+		</style>
+		
+	</head>
+	
+	<body>	<div id="content">
+<img src="../icon/Scenario.png" alt="Scenario" style="float:left; margin-right:10px" /><h1><a href="../obc-model/301dbb87caa3424081c7ee79aa081943.html">&#091;ES&#093; System Mode Change Physical Scenario</a></h1>
+<p style="margin-top:3px; margin-bottom:3px"><span class="elementMetaClass">Scenario</span></p>
+<em class="elementPath"><a href="../obc-model/aaac88125a074074a6d4d45e2d34224b.html">obc&#045;model</a> > <a href="../obc-model/dad23c8bf3284ffcb0b5eaef7bb6b189.html">obc&#045;model</a> > <a href="../obc-model/40998653699549ac825f30b38a2bc1ee.html">Physical Architecture</a> > <a href="../obc-model/b2387ffaa0b94105b402c3d2e2210213.html">Capabilities</a> > <a href="../obc-model/1990e43d44f84afea74640022f01ceac.html">CapabilityRealization 1</a> > <a href="../obc-model/301dbb87caa3424081c7ee79aa081943.html">&#091;ES&#093; System Mode Change Physical Scenario</a></em>
+
+<p>
+No description.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<h2>Owned diagrams</h2>
+
+<p class="diagram-name" id="_u0Bz0LspEe2jCIYUTTat2Q">ES Commanded Mode Change Physical Scenario</p>
+<p>image is missing</p>
+<p class="diagram-description"></p>
+
+
+
+<h2>Sequence Messages</h2>
+
+<table max-width="screen.width">
+   <thead> 
+       <tr>
+           <th>Invoked Exchange</th>
+           <th>Source element of the Exchange</th>
+           <th>Target element of the Exchange</th>
+           <th>Description of the Sequence Message <br /> <i>(and not the one of the invoked exchange)</i></th>
+       </tr>
+   </thead>
+   <tbody>
+
+		<tr>
+           <td>Mode change telecommand transmission</td>
+           <td></td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Mode change TC dump</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>System mode change</td>
+           <td>System mode manager</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change</td>
+           <td>System mode manager</td>
+           <td>Comms mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change command</td>
+           <td>Comms mode change notifier</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change report</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>Comms mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change report</td>
+           <td>Comms mode change notifier</td>
+           <td>System mode change report collector</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change confirmation</td>
+           <td>Comms mode change notifier</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Payload mode change</td>
+           <td>System mode manager</td>
+           <td>Payload mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Payload mode change command</td>
+           <td>Payload mode change notifier</td>
+           <td>Payload Subsystem Process</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Payload mode change</td>
+           <td>Payload Subsystem Process</td>
+           <td>Payload Subsystem Process</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Payload mode change report</td>
+           <td>Payload Subsystem Process</td>
+           <td>Payload mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Payload mode change report</td>
+           <td>Payload mode change notifier</td>
+           <td>System mode change report collector</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Payload mode change confirmation</td>
+           <td>Payload mode change notifier</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Pipeline mode change</td>
+           <td>System mode manager</td>
+           <td>Pipeline mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Pipeline mode change command</td>
+           <td>Pipeline mode change notifier</td>
+           <td>Software Pipeline Subsystem Process</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Pipeline mode change</td>
+           <td>Software Pipeline Subsystem Process</td>
+           <td>Software Pipeline Subsystem Process</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Pipeline mode change report</td>
+           <td>Software Pipeline Subsystem Process</td>
+           <td>Pipeline mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Pipeline mode change report</td>
+           <td>Pipeline mode change notifier</td>
+           <td>System mode change report collector</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Pipeline mode change confirmation</td>
+           <td>Pipeline mode change notifier</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>System mode change completion</td>
+           <td>System mode manager</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>System mode change report flush trigger</td>
+           <td>System mode manager</td>
+           <td>System mode change report collector</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>System mode change report</td>
+           <td>System mode change report collector</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Mode change report transmission</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td></td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Mode change report flush</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>System mode change</td>
+           <td>System mode manager</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change</td>
+           <td>System mode manager</td>
+           <td>Comms mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change command</td>
+           <td>Comms mode change notifier</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change report</td>
+           <td>Communications Subsystem Behaviour</td>
+           <td>Comms mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change report</td>
+           <td>Comms mode change notifier</td>
+           <td>System mode change report collector</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>Comms mode change confirmation</td>
+           <td>Comms mode change notifier</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>EPS mode change</td>
+           <td>System mode manager</td>
+           <td>EPS mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>EPS mode change command</td>
+           <td>EPS mode change notifier</td>
+           <td>Electrical Power Subsystem Process</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>EPS mode change</td>
+           <td>Electrical Power Subsystem Process</td>
+           <td>Electrical Power Subsystem Process</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>EPS mode change report</td>
+           <td>Electrical Power Subsystem Process</td>
+           <td>EPS mode change notifier</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>EPS mode change report</td>
+           <td>EPS mode change notifier</td>
+           <td>System mode change report collector</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>EPS mode change confirmation</td>
+           <td>EPS mode change notifier</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+		<tr>
+           <td>System mode change completion</td>
+           <td>System mode manager</td>
+           <td>System mode manager</td>
+           <td>No description</td>
+       </tr>
+   </tbody>
+</table>
+</div>	</body>
+</html>
