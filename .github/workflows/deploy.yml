@@ -3,11 +3,12 @@ name: CD
 on:
   # can be manually triggered
   workflow_dispatch:
-  # automatically triggered by push events on main only
+  # automatically triggered by push events on main only or with cloudview tags
   push:
     branches:
       - 'main'
-
+    tags:
+      - 'cloudview-*'
 jobs:
   # build and run the Docker container to validate the model and generate the documentation
   # then publish the HTML artifacts to GitHub Pages
@@ -31,4 +32,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: artifacts
+          destination_dir: ${{ github.GITHUB_REF_NAME }}
 
