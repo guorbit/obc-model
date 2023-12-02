@@ -36,3 +36,6 @@ capella -nosplash -consoleLog \
 cp -r "/workdir/obc-model/html" ${results_folder}/html_export
 cp -r "/workdir/obc-model/validation" ${results_folder}/validation
 
+# Copy over index.html
+cp index.html ${results_folder}/index.html
+
