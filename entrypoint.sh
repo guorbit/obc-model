@@ -35,7 +35,3 @@ capella -nosplash -consoleLog \
 # Copy the validation and html output to the ${results_folder}/ that is mapped as a volume
 cp -r "/workdir/obc-model/html" ${results_folder}/html_export
 cp -r "/workdir/obc-model/validation" ${results_folder}/validation
-
-# Copy over index.html
-cp index.html ${results_folder}/index.html
-
