@@ -1795,100 +1795,6 @@
               id="6f69b9ba-6c00-4021-b55b-48df528fcb4d" involved="#04348032-9c89-4aef-ab7a-9161d2a63544"/>
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
-            id="cf242529-c4e8-4df5-84ac-5e78ca6a5e45" name="OBC Watchdog Monitoring">
-          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
-              id="92996bd0-6cd5-4f62-9e4f-dfc9e40c5578" name="[ES] OBC Watchdog Monitoring Scenario"
-              kind="DATA_FLOW">
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="062a978a-a0ed-405d-82a7-661b0dc871f3" name="System" representedInstance="#f85cb3a8-7644-4a2b-b4ef-71f933a9c04c"/>
-            <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="3e231a38-58df-4532-8316-380e4682af05" name="Arm Timer" kind="TIMER"
-                sendingEnd="#541de4fd-7293-4cdd-bdd3-a0d5ca80f70e" receivingEnd="#421dbb9e-84df-4222-97c3-35114c69c883"/>
-            <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="9805d269-f08a-4673-82d3-1c220fe07549" name="System faulty. Restore health"
-                kind="ASYNCHRONOUS_CALL" sendingEnd="#1569897e-5344-4110-892c-41e273bd5802"
-                receivingEnd="#11eea20e-f47a-4dbf-83fd-336d972f21c3"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
-                id="11560383-7e61-4532-b353-28295217cfa2" name="start" coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionOperand"
-                id="591efd47-1520-4601-9f5a-d2a40dc2c246" name="operand 1" coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
-                id="541de4fd-7293-4cdd-bdd3-a0d5ca80f70e" name="Send Call Arm Timer"
-                coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3" event="#998de67b-393c-4a27-a633-c2eeb280274a"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
-                id="421dbb9e-84df-4222-97c3-35114c69c883" name="Receive Call Arm Timer"
-                coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3" event="#a9dbe258-26f2-42ae-bc4a-213e2e38d738"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
-                id="6c71983e-0c88-4aba-a7fe-320074e102b1" name="endExec" coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3"
-                event="#9493c3d6-084f-49f5-b098-f477672913a6"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="0b873f94-e8df-49a4-8888-80fae7767dd0" name="Check system's health"
-                coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3" relatedAbstractFunction="#cf812984-7c34-4a4d-b532-a9fbe2efd2aa"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="1b6e860b-a5a4-4b9c-996c-7d48b774cb63" name="Check system's health"
-                coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3" relatedAbstractFunction="#cf812984-7c34-4a4d-b532-a9fbe2efd2aa"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
-                id="287cd5d6-a12a-4a3f-9a59-b70aba8a60ff" name="start" coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionOperand"
-                id="0274cac3-6e85-4751-a72b-2beb05fa94ed" name="operand 1" coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
-                id="1569897e-5344-4110-892c-41e273bd5802" name="Send Call Message Call"
-                coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3" event="#1a3d184f-ffdd-48d3-81b9-67fdaf5ed507"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
-                id="11eea20e-f47a-4dbf-83fd-336d972f21c3" name="Receive Call Message Call"
-                coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3" event="#91e8cfbe-c051-44c2-9a96-aa91b3d50ae4"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="9dd7b54d-4023-4b3b-b419-24eb33ea474e" name="Restore system's health"
-                coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3" relatedAbstractFunction="#89100d18-2632-4e50-91e2-4f6d71cbb1ed"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="170a2902-7341-4981-8f67-abf407610b4c" name="Restore system's health"
-                coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3" relatedAbstractFunction="#89100d18-2632-4e50-91e2-4f6d71cbb1ed"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
-                id="a158cbf8-48c9-4c2f-9f94-3af21ad4da53" name="endExec" coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3"
-                event="#5333eda3-76e0-40eb-acdd-a03849b4c1d7"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
-                id="24bf6a7c-27bd-48b0-89d0-5c604f511798" name="end" coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
-                id="d26acdfd-49b8-4d70-8f72-5d58f58690b8" name="end" coveredInstanceRoles="#062a978a-a0ed-405d-82a7-661b0dc871f3"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:CombinedFragment"
-                id="03c0a721-511f-47cd-bb53-0283b7e4447e" name="combined fragment"
-                start="#11560383-7e61-4532-b353-28295217cfa2" finish="#d26acdfd-49b8-4d70-8f72-5d58f58690b8"
-                operator="LOOP" referencedOperands="#591efd47-1520-4601-9f5a-d2a40dc2c246"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:Execution"
-                id="f68bfcbc-f3ff-4419-bdfb-8113cea2ec41" start="#421dbb9e-84df-4222-97c3-35114c69c883"
-                finish="#6c71983e-0c88-4aba-a7fe-320074e102b1"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:CombinedFragment"
-                id="63d1aeaf-0226-47d3-a9e3-52b86e4b3ec9" name="combined fragment"
-                start="#287cd5d6-a12a-4a3f-9a59-b70aba8a60ff" finish="#24bf6a7c-27bd-48b0-89d0-5c604f511798"
-                operator="ALT" referencedOperands="#0274cac3-6e85-4751-a72b-2beb05fa94ed"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="e816afee-a121-4ef7-bac0-8baa085ff98d" start="#0b873f94-e8df-49a4-8888-80fae7767dd0"
-                finish="#1b6e860b-a5a4-4b9c-996c-7d48b774cb63" relatedAbstractFunction="#cf812984-7c34-4a4d-b532-a9fbe2efd2aa"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:Execution"
-                id="5ea1f8e7-32fd-4d5a-8de0-30eebf6aee60" start="#11eea20e-f47a-4dbf-83fd-336d972f21c3"
-                finish="#a158cbf8-48c9-4c2f-9f94-3af21ad4da53"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="ac936dd2-5d41-48f9-8c6a-498342bef5af" start="#9dd7b54d-4023-4b3b-b419-24eb33ea474e"
-                finish="#170a2902-7341-4981-8f67-abf407610b4c" relatedAbstractFunction="#89100d18-2632-4e50-91e2-4f6d71cbb1ed"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ArmTimerEvent"
-                id="998de67b-393c-4a27-a633-c2eeb280274a"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ArmTimerEvent"
-                id="a9dbe258-26f2-42ae-bc4a-213e2e38d738"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEvent"
-                id="9493c3d6-084f-49f5-b098-f477672913a6"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:EventSentOperation"
-                id="1a3d184f-ffdd-48d3-81b9-67fdaf5ed507" operation="#55391650-9eb4-4c98-93db-bd3f2c92dce4"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:EventReceiptOperation"
-                id="91e8cfbe-c051-44c2-9a96-aa91b3d50ae4" operation="#55391650-9eb4-4c98-93db-bd3f2c92dce4"/>
-            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEvent"
-                id="5333eda3-76e0-40eb-acdd-a03849b4c1d7"/>
-          </ownedScenarios>
-          <superGeneralizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityGeneralization"
-              id="b5e5ae76-39ea-4f3a-a2aa-41e58b90112f" super="#d63f9491-d574-44cf-ae58-2d8ced5c72ac"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="58baddb7-6348-4434-b9cd-b611da0cc465" involved="#8f68ec0b-d37c-4dfd-9b29-518cf20c5078"/>
-        </ownedCapabilities>
-        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="d63f9491-d574-44cf-ae58-2d8ced5c72ac" name="System Health Monitoring">
           <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
               id="4e0c1cbb-7a17-4c96-a73f-f918152f6528" name="[ES] System Health Monitoring"
@@ -1976,6 +1882,93 @@
                 id="31acf75c-8814-4a95-9280-0cf505265c6c" operation="#55391650-9eb4-4c98-93db-bd3f2c92dce4"/>
             <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEvent"
                 id="aafc627b-777b-4559-b246-288331697fd4"/>
+          </ownedScenarios>
+          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
+              id="542ddb60-56c9-4211-a69a-a974fccdaff3" name="[ES] System Health Monitoring Scenario"
+              kind="DATA_FLOW">
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" name="System" representedInstance="#f85cb3a8-7644-4a2b-b4ef-71f933a9c04c"/>
+            <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
+                id="ac96186a-5c72-4071-80b0-87d9918b87c3" name="Arm Timer" kind="TIMER"
+                sendingEnd="#625fc920-4b47-4f63-a4c9-9dd10567ec8b" receivingEnd="#656b867d-c51c-4e22-8ba2-7ed4063fe791"/>
+            <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
+                id="18c0c4dd-561d-4c70-ad51-751131bf02da" name="System faulty. Restore health"
+                kind="ASYNCHRONOUS_CALL" sendingEnd="#172994e6-0d58-439a-b661-dcde6bd9eb3e"
+                receivingEnd="#bb82bc36-47bf-4bc7-a11e-a7bac1bec4a9"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
+                id="83177d85-8af1-45ed-896d-3e95ed384feb" name="start" coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionOperand"
+                id="b52785c3-441a-4692-8050-cbf9a280c9db" name="operand 1" coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
+                id="625fc920-4b47-4f63-a4c9-9dd10567ec8b" name="Send Call Arm Timer"
+                coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" event="#e7497154-0b10-4d25-bcea-43f0d17cfcb8"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
+                id="656b867d-c51c-4e22-8ba2-7ed4063fe791" name="Receive Call Arm Timer"
+                coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" event="#e9a9e276-599f-4ec3-9add-0b95a20e7435"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
+                id="18ca1f32-2995-469f-925b-8c2bb6b6ed8a" name="endExec" coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92"
+                event="#b3f898e0-894f-46db-967d-59ce7f1925a4"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="c2a5734d-0fe4-45c9-b510-99e259ecfe02" name="Check system's health"
+                coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" relatedAbstractFunction="#cf812984-7c34-4a4d-b532-a9fbe2efd2aa"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="5a89a46f-bcb2-4773-acaf-8a8e46f8cbaf" name="Check system's health"
+                coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" relatedAbstractFunction="#cf812984-7c34-4a4d-b532-a9fbe2efd2aa"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
+                id="f16bfcb3-2cb9-4d23-ab24-6ac5d60773a6" name="start" coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionOperand"
+                id="0fc6d56d-2361-402a-a943-ccc0bebdadd1" name="operand 1" coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
+                id="172994e6-0d58-439a-b661-dcde6bd9eb3e" name="Send Call Message Call"
+                coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" event="#aa314007-07fc-4b4c-a849-cfae99ad930c"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:MessageEnd"
+                id="bb82bc36-47bf-4bc7-a11e-a7bac1bec4a9" name="Receive Call Message Call"
+                coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" event="#333c4f26-5dc9-4c05-a704-ad4bf02304f1"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="6694b8ee-60e2-4730-8394-640f0181ffb3" name="Restore system's health"
+                coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" relatedAbstractFunction="#89100d18-2632-4e50-91e2-4f6d71cbb1ed"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="7685d022-f069-47a9-a43c-2cfb46bf35f2" name="Restore system's health"
+                coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92" relatedAbstractFunction="#89100d18-2632-4e50-91e2-4f6d71cbb1ed"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
+                id="c1a6e543-bd28-4a9a-a0a1-088957b3a2ec" name="endExec" coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92"
+                event="#2f5b60b3-f8a5-4084-9e8e-c4fe7a37415e"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
+                id="ed98c79a-faf5-4aae-963d-0a843379c0f0" name="end" coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
+                id="86ccd5ad-16e3-4075-9fd5-4f3c99c7e8dc" name="end" coveredInstanceRoles="#a6b2fc4f-e180-428b-9ddd-cdcbd7703f92"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:CombinedFragment"
+                id="5c3273c0-8a50-4ffa-9c4b-075b628aea2f" name="combined fragment"
+                start="#83177d85-8af1-45ed-896d-3e95ed384feb" finish="#86ccd5ad-16e3-4075-9fd5-4f3c99c7e8dc"
+                operator="LOOP" referencedOperands="#b52785c3-441a-4692-8050-cbf9a280c9db"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:Execution"
+                id="6efaa65b-190c-41e4-b730-91d61b4d6a78" start="#656b867d-c51c-4e22-8ba2-7ed4063fe791"
+                finish="#18ca1f32-2995-469f-925b-8c2bb6b6ed8a"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:CombinedFragment"
+                id="611a1bf5-552e-44bb-a8a7-3e07817c0f5e" name="combined fragment"
+                start="#f16bfcb3-2cb9-4d23-ab24-6ac5d60773a6" finish="#ed98c79a-faf5-4aae-963d-0a843379c0f0"
+                operator="ALT" referencedOperands="#0fc6d56d-2361-402a-a943-ccc0bebdadd1"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:Execution"
+                id="911c35a2-c8f3-4280-9b59-561bec8d7191" start="#bb82bc36-47bf-4bc7-a11e-a7bac1bec4a9"
+                finish="#c1a6e543-bd28-4a9a-a0a1-088957b3a2ec"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
+                id="2b5bd03e-e806-4671-8d79-101900111251" start="#6694b8ee-60e2-4730-8394-640f0181ffb3"
+                finish="#7685d022-f069-47a9-a43c-2cfb46bf35f2" relatedAbstractFunction="#89100d18-2632-4e50-91e2-4f6d71cbb1ed"/>
+            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
+                id="6488b5ba-e19c-4257-8163-915ffa6b2ef1" start="#c2a5734d-0fe4-45c9-b510-99e259ecfe02"
+                finish="#5a89a46f-bcb2-4773-acaf-8a8e46f8cbaf" relatedAbstractFunction="#cf812984-7c34-4a4d-b532-a9fbe2efd2aa"/>
+            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ArmTimerEvent"
+                id="e7497154-0b10-4d25-bcea-43f0d17cfcb8"/>
+            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ArmTimerEvent"
+                id="e9a9e276-599f-4ec3-9add-0b95a20e7435"/>
+            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEvent"
+                id="b3f898e0-894f-46db-967d-59ce7f1925a4"/>
+            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:EventSentOperation"
+                id="aa314007-07fc-4b4c-a849-cfae99ad930c" operation="#55391650-9eb4-4c98-93db-bd3f2c92dce4"/>
+            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:EventReceiptOperation"
+                id="333c4f26-5dc9-4c05-a704-ad4bf02304f1" operation="#55391650-9eb4-4c98-93db-bd3f2c92dce4"/>
+            <ownedEvents xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEvent"
+                id="2f5b60b3-f8a5-4084-9e8e-c4fe7a37415e"/>
           </ownedScenarios>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="d93afcb3-3b70-475f-b2d5-8b6b4f26e67b" involved="#8f68ec0b-d37c-4dfd-9b29-518cf20c5078"/>
